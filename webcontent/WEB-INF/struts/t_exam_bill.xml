@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts-config SYSTEM "mars-struts.dtd">
+<struts-config>
+  <menu-name>审核单信息</menu-name>
+  <menu-path>/app/elshd/</menu-path>
+  <description>审核单信息</description>
+  <form-beans>
+    <form-bean name="TExamBillRowsetForm">
+      <description>多记录查询</description>
+      <form-property prefix="select-key" name="bill_id" type="string" size="24" description="审核单编号"/>
+      <form-property prefix="select-key" name="taxpayer_id" type="string" size="32" description="纳税人编号"/>
+      <form-property prefix="select-key" name="taxpayer_name" type="string" size="500" description="纳税人名称"/>
+      <form-property prefix="select-key" name="imex_type" type="string" size="1" description="进出口类型"/>
+      <form-property prefix="select-key" name="declar_tot_num" type="int" size="10" description="报关单总记录数"/>
+      <form-property prefix="select-key" name="declar_tot_amt" type="double" size="19" description="报关单总金额"/>
+      <form-property prefix="select-key" name="b_date" type="string" size="8" description="录入日期"/>
+      <form-property prefix="select-key" name="e_date" type="string" size="8" description="录入日期"/>
+      <form-property prefix="select-key" name="create_user" type="string" size="100" description="录入人"/>
+      <form-property prefix="record" name="t_exam_bill" type="table" description="审核单信息表"/>
+      <form-property prefix="declar" type="object" description="报关单信息表"/>
+    </form-bean>
+
+    <form-bean name="TExamBillUpdateForm">
+      <description>单记录处理：查询、修改、增加</description>
+      <form-property prefix="primary-key" name="bill_id" type="string" size="24" cannull="false" description="审核单编号"/>
+      <form-property prefix="record" name="t_exam_bill" type="table" description="审核单信息表"/>
+      <form-property prefix="declar" type="object" description="报关单信息表"/>
+    </form-bean>
+
+    <form-bean name="TExamBillDeleteForm">
+      <description>多记录和单记录删除</description>
+      <form-property prefix="primary-key" name="bill_id" type="string" size="24" cannull="false" description="审核单编号"/>
+    </form-bean>
+  </form-beans>
+
+  <action-mappings>
+    <action input="query-t_exam_bill.jsp" name="TExamBillRowsetForm" txn-code="01A01011" check-type="check" container="default" txn-type="transaction" re-entry="true" log-flag="true">
+      <description>查询审核单列表</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01011" input-node="select-key" output-node="record" description="查询审核单列表"/>
+      <forward error-code="success" path="query-t_exam_bill.jsp"/>
+      <forward error-code="failure" path="query-t_exam_bill.jsp"/>
+      <forward name="print" error-code="success" path="print-t_exam_bill.jsp"/>
+      <forward name="print" error-code="failure" path="print-t_exam_bill.jsp"/>
+    </action>
+
+    <action input="update-t_exam_bill.jsp" name="TExamBillUpdateForm" txn-code="01A01012" check-type="check" container="default" txn-type="transaction" re-entry="false" log-flag="true">
+      <description>修改审核单信息</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01012" input-node="record" description="修改审核单信息"/>
+      <forward error-code="success" path="update-t_exam_bill.jsp"/>
+      <forward error-code="failure" path="update-t_exam_bill.jsp"/>
+    </action>
+
+    <action input="insert-t_exam_bill.jsp" name="TExamBillUpdateForm" txn-code="01A01013" check-type="check" container="default" txn-type="transaction" re-entry="false" log-flag="true">
+      <description>增加审核单信息</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01013" input-node="record" description="增加审核单信息"/>
+      <forward error-code="success" path="insert-t_exam_bill.jsp"/>
+      <forward error-code="failure" path="insert-t_exam_bill.jsp"/>
+    </action>
+
+    <action input="query-t_exam_bill.jsp" name="TExamBillUpdateForm" txn-code="01A01014" check-type="check" container="default" txn-type="transaction" re-entry="true" log-flag="true">
+      <description>查询审核单用于修改</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01014" input-node="primary-key" output-node="record" description="查询审核单用于修改"/>
+      <forward error-code="success" path="update-t_exam_bill.jsp"/>
+      <forward error-code="failure" path="update-t_exam_bill.jsp"/>
+    </action>
+
+    <action input="query-t_exam_bill.jsp" name="TExamBillDeleteForm" txn-code="01A01015" check-type="check" container="default" txn-type="transaction" re-entry="false" log-flag="true">
+      <description>删除审核单信息</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01015" input-node="primary-key" description="删除审核单信息"/>
+      <forward error-code="success" path="/script/deletesuccess.jsp"/>
+      <forward error-code="failure" path="/script/deletefailure.jsp"/>
+    </action>
+
+    <action input="query-t_exam_bill.jsp" name="TExamBillUpdateForm" txn-code="01A01016" check-type="check" container="default" txn-type="transaction" re-entry="true" log-flag="true">
+      <description>审核单的记录信息</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01016" input-node="primary-key" output-node="record" description="审核单的记录信息"/>
+      <forward error-code="success" path="view-t_exam_bill.jsp"/>
+      <forward error-code="failure" path="view-t_exam_bill.jsp"/>
+    </action>
+    <action input="insert-t_exam_bill.jsp" name="TExamBillUpdateForm" txn-code="01A01017" check-type="check" container="default" txn-type="transaction" re-entry="false" log-flag="true">
+      <description>增加审核单信息并打印</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01013" input-node="record" description="增加审核单信息"/>
+      <forward error-code="success" path="view-t_exam_bill.jsp"/>
+      <forward error-code="failure" path="view-t_exam_bill.jsp"/>
+    </action>
+    <action input="insert-t_exam_bill.jsp" name="TExamBillUpdateForm" txn-code="01A01018" check-type="public" container="default" txn-type="transaction" re-entry="false" log-flag="true">
+      <description>序号归0</description>
+      <step index="10" bean-name="cn.mars.elshd.exam.txn.TxnTExamBill" func-name="txn01A01018" input-node="record" description="序号归0"/>
+      <forward error-code="success" path="view-t_exam_bill.jsp"/>
+      <forward error-code="failure" path="view-t_exam_bill.jsp"/>
+    </action>
+  </action-mappings>
+
+  <resource>
+    <resource-file type="model" file-name="/WEB-INF/resource/jsp-frame/menu-t_exam_bill.xml" description="模板文件"/>
+    <resource-file type="jsp" file-name="/app/elshd/query-t_exam_bill.jsp" description="查询审核单列表"/>
+    <resource-file type="jsp" file-name="/app/elshd/insert-t_exam_bill.jsp" description="增加审核单信息"/>
+    <resource-file type="jsp" file-name="/app/elshd/update-t_exam_bill.jsp" description="修改审核单信息"/>
+    <resource-file type="jsp" file-name="/app/elshd/print-t_exam_bill.jsp" description="打印审核单信息"/>
+    <resource-file type="jsp" file-name="/app/elshd/view-t_exam_bill.jsp" description="查看审核单信息"/>
+  </resource>
+</struts-config>
+

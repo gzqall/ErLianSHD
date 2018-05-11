@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GBK"?>
+<profile>
+<layout-name>toolbar-iframe</layout-name>
+<app-title>测试系统</app-title>
+<bgColor>#EFF7FF</bgColor>
+<borderColor>#CCDBEE</borderColor>
+<titleFontSize>9pt</titleFontSize>
+<inputFontSize>9pt</inputFontSize>
+<stepNumber>8</stepNumber>
+<keepWindowCount>8</keepWindowCount>
+<toolbarType>2</toolbarType>
+<deskMenuType>outlook</deskMenuType>
+<menuType>tree</menuType>
+<pageWidth>100%</pageWidth>
+<msgHost></msgHost>
+<dateFormat>yyyy/mm/dd</dateFormat>
+<showTitle>false</showTitle>
+<chineseLength>1</chineseLength>
+<domainName></domainName>
+<branch>测试单位</branch>
+<year-copy>2009-2010</year-copy>
+<ch-copy>中国XXXX公司</ch-copy>
+<en-copy>CoinTek Company</en-copy>
+<app-ver>V1.0.1</app-ver>
+<cust-path>cust-images</cust-path>
+</profile>

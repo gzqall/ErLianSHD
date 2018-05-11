@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<report-tools>
+  <tool>
+    <name>codemap</name>
+    <class>cn.mars.common.txn.report.CodeMap</class>
+  </tool>
+</report-tools>
+

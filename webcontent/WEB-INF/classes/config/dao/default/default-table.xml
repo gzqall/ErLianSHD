@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE columns SYSTEM "default-database.dtd">
+<table>
+	<database>mars</database>
+	
+	<table-info default-filter="有效标志=0"/>
+	
+	<column name="流水号" data-type="integer" not-null="true" value-from="sequence" value-set="flowid" description="流水号" />
+	<column name="编号" data-type="integer" not-null="true" value-from="sequence" value-set="flowid" description="编号" />
+	<column name="有效标志" data-type="integer" not-null="true" value-from="input" default="0" description="有效标志" replace="true"/>
+	<column name="操作员" data-type="varchar" value-from="generate" func-name="operName" length="12" description="操作员" replace="true"/>
+	<column name="操作时间" data-type="char" value-from="generate" func-name="currentDateTime" length="14" description="操作时间" replace="true"/>
+	<column name="操作单位编号" data-type="varchar" value-from="generate" func-name="orgName" length="12" description="操作单位编号" replace="true"/>
+	<column name="操作交易码" data-type="char" value-from="generate" func-name="txnCode" length="10" description="操作交易码" replace="true"/>	
+	<column name="备用字段" data-type="varchar" value-from="input" length="100" description="备用字段" />	
+	<column name="备用字段1" data-type="varchar" value-from="input" length="100" description="备用字段1" />	
+	<column name="备用字段2" data-type="varchar" value-from="input" length="100" description="备用字段2" />	
+	
+	<function func-type="rowset" need-column="流水号" default-filter="有效标志=0">
+		<description>多记录查询</description>
+	</function>
+	
+	<function func-type="select" need-column="流水号" default-filter="有效标志=0">
+		<description>单记录查询</description>
+	</function>
+	
+	<function func-type="insert" need-column="流水号,编号,有效标志,操作员,操作时间,操作单位编号,操作交易码,备用字段,备用字段1,备用字段2">
+		<description>增加记录</description>
+	</function>
+	
+	<function func-type="update" need-column="操作员,操作时间,操作单位编号,操作交易码,备用字段,备用字段1,备用字段2" disable-column="流水号,编号" default-filter="有效标志=0">
+		<description>修改记录</description>
+	</function>
+	
+	<function func-type="delete" default-filter="有效标志=0">
+		<description>删除记录</description>
+	</function>
+</table>

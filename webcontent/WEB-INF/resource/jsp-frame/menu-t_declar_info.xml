@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="GBK"?>
+<resource>
+  <model name="单表数据库操作" page="single-table.jsp" wizard-class="cn.mars.console.txn.wizard.TableModuleWizard" demo-image="single-table.gif"/>
+  <struts name="t_declar_info" app-path="/app/declar/" app-name="t_declar_info" gen-vo-object="false" description="报关单信息" template="single-table.xml"/>
+  <table name="t_declar_info" app-name="t_declar_info" app-desc="报关单" delete-action="delete" description="报关单信息" class-name="cn.mars.elshd.declar.txn.TxnTDeclarInfo" template="single-table.java" dao-class-template="single-table.java">
+	  <jsp page-name="query-t_declar_info.jsp" txn-code="01B01011" description="查询报关单列表" template="single/single-table-query.jsp">
+	    <button type="button" name="增加报关单" path="insert-t_declar_info.jsp" description="增加报关单" func-name="addRecord"/>
+	    <button type="button" name="修改报关单" path="/txn01B01014.do" description="修改报关单" func-name="updateRecord"/>
+	    <button type="button" name="删除报关单" path="/txn01B01015.do" description="删除报关单" func-name="deleteRecord"/>
+	    <button type="button" name="打印列表" path="/txn01B01011.do" description="打印列表" func-name="printPage"/>
+	    <button type="button" name="查看内容" path="/txn01B01016.do" description="查看内容" func-name="viewRecord"/>
+	    <button type="button" name="查 询" path="/txn01B01011.do" description="查询报关单信息" func-name="submit"/>
+	  </jsp>
+	  <jsp page-name="insert-t_declar_info.jsp" txn-code="01B01013" description="增加报关单信息" template="single/single-table-insert.jsp">
+	    <button type="button" name="保 存" path="/txn01B01013.do" description="保存报关单信息" func-name="saveRecord"/>
+	    <button type="button" name="保存并继续" path="/txn01B01013.do" description="保存报关单信息并继续" func-name="saveAndContinue"/>
+	    <button type="button" name="保存并关闭" path="/txn01B01011.do" description="保存报关单信息并返回" func-name="saveAndExit"/>
+	    <button type="button" name="返 回" path="/txn01B01011.do" description="返回到报关单明细窗口" func-name="goBack"/>
+	  </jsp>
+	  <jsp page-name="update-t_declar_info.jsp" txn-code="01B01012" description="修改报关单信息" template="single/single-table-update.jsp">
+	    <button type="button" name="保 存" path="/txn01B01011.do" description="修改报关单信息" func-name="saveAndExit"/>
+	    <button type="button" name="返 回" path="/txn01B01011.do" description="返回到明细窗口" func-name="goBack"/>
+	  </jsp>
+	  <jsp page-name="print-t_declar_info.jsp" txn-code="01B01011" description="打印报关单信息" template="single/single-table-print.jsp">
+	    <button type="button" name="打 印" path="#print(document)" description="打印报关单信息" func-name="printDocument"/>
+	    <button type="button" name="返 回" path="/txn01B01011.do" description="返回到明细窗口" func-name="goBackNoUpdate"/>
+	  </jsp>
+	  <jsp page-name="view-t_declar_info.jsp" txn-code="01B01016" description="查看报关单信息" template="single/single-table-view.jsp">
+	    <button type="button" name="打 印" path="#print(document)" description="打印报关单信息" func-name="printDocument"/>
+	    <button type="button" name="返 回" path="/txn01B01011.do" description="返回到明细窗口" func-name="goBackNoUpdate"/>
+	  </jsp>
+
+	  <txn input="query-t_declar_info.jsp" txn-code="01B01011" description="查询报关单列表">
+	    <forward error-code="success" path="query-t_declar_info.jsp" description="成功时返回列表"/>
+	    <forward error-code="failure" path="query-t_declar_info.jsp" description="错误时返回错误信息"/>
+	    <forward name="print" error-code="success" path="print-t_declar_info.jsp" description="成功时返回打印列表"/>
+	    <forward name="print" error-code="failure" path="print-t_declar_info.jsp" description="错误时返回错误信息"/>
+	  </txn>
+	  <txn input="update-t_declar_info.jsp" txn-code="01B01012" description="修改报关单信息">
+	    <forward error-code="success" path="update-t_declar_info.jsp" description="成功时返回页面"/>
+	    <forward error-code="failure" path="update-t_declar_info.jsp" description="错误时返回页面"/>
+	  </txn>
+	  <txn input="insert-t_declar_info.jsp" txn-code="01B01013" description="增加报关单信息">
+	    <forward error-code="success" path="insert-t_declar_info.jsp" description="成功时返回页面"/>
+	    <forward error-code="failure" path="insert-t_declar_info.jsp" description="错误时返回页面"/>
+	  </txn>
+	  <txn input="query-t_declar_info.jsp" txn-code="01B01014" description="查询报关单用于修改">
+	    <forward error-code="success" path="update-t_declar_info.jsp" description="成功时返回记录"/>
+	    <forward error-code="failure" path="update-t_declar_info.jsp" description="错误时返回页面"/>
+	  </txn>
+	  <txn input="query-t_declar_info.jsp" txn-code="01B01015" description="删除报关单信息">
+	    <forward error-code="success" path="/script/deletesuccess.jsp" description="成功时返回提示页面"/>
+	    <forward error-code="failure" path="/script/deletefailure.jsp" description="错误时返回提示页面"/>
+	  </txn>
+	  <txn input="query-t_declar_info.jsp" txn-code="01B01016" description="报关单的记录信息">
+	    <forward error-code="success" path="view-t_declar_info.jsp" description="成功时返回记录信息页面"/>
+	    <forward error-code="failure" path="view-t_declar_info.jsp" description="错误时返回记录信息页面"/>
+	  </txn>
+  </table>
+</resource>

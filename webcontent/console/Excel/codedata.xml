@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE struts-config SYSTEM "mars-struts.dtd">
+<struts-config>
+<menu-name>业务参数维护</menu-name>
+<menu-path>/module/parameter/codelist/</menu-path>
+<description>业务参数维护</description>
+<form-beans>
+  <form-bean name="CodeindexRowsetForm">
+    <description>多记录查询</description>
+    <form-property prefix="select-key" name="codetype" type="string" size="64" description="代码名称"/>
+    <form-property prefix="select-key" name="description" type="string" size="128" description="代码描述"/>
+    <form-property prefix="record" name="codetype" array-flag="true" type="string" size="64" description="代码名称"/>
+    <form-property prefix="record" name="description" array-flag="true" type="string" size="128" description="代码描述"/>
+    <form-property prefix="record" name="status" array-flag="true" type="int" cannull="false" description="使用标志"/>
+    <form-property prefix="record" name="tablename" array-flag="true" type="string" size="64" cannull="false" description="数据表名称"/>
+    <form-property prefix="record" name="loadfunc" array-flag="true" type="string" size="64" cannull="false" description="取值函数"/>
+    <form-property prefix="record" name="mainpage" array-flag="true" type="string" size="128" cannull="false" description="维护页面"/>
+    <form-property prefix="record" name="role" array-flag="true" type="string" size="128" cannull="false" description="维护权限"/>
+    <form-property prefix="record" name="loadsycle" array-flag="true" type="int" description="刷新时间"/>
+    <form-property prefix="record" name="stopdate" array-flag="true" type="char" size="8" cannull="false" description="注销时间"/>
+    <form-property prefix="record" name="delreason" array-flag="true" type="string" size="256" cannull="false" description="注销原因"/>
+  </form-bean>
+
+  <form-bean name="CodeindexUpdateForm">
+    <description>单记录处理：查询、修改、增加</description>
+    <form-property prefix="primary-key" name="codetype" type="string" size="64" description="代码名称"/>
+    <form-property prefix="record" name="codetype" type="string" size="64" description="代码名称"/>
+    <form-property prefix="record" name="description" type="string" size="128" description="代码描述"/>
+    <form-property prefix="record" name="status" type="int" cannull="false" description="使用标志"/>
+    <form-property prefix="record" name="tablename" type="string" size="64" cannull="false" description="数据表名称"/>
+    <form-property prefix="record" name="loadfunc" type="string" size="64" cannull="false" description="取值函数"/>
+    <form-property prefix="record" name="mainpage" type="string" size="128" cannull="false" description="维护页面"/>
+    <form-property prefix="record" name="role" type="string" size="128" cannull="false" description="维护权限"/>
+    <form-property prefix="record" name="loadsycle" type="int" description="刷新时间"/>
+    <form-property prefix="record" name="stopdate" type="char" size="8" cannull="false" description="注销时间"/>
+    <form-property prefix="record" name="delreason" type="string" size="256" cannull="false" description="注销原因"/>
+  </form-bean>
+
+  <form-bean name="CodedataRowsetForm">
+    <description>多记录查询</description>
+    <form-property prefix="select-key" name="codetype" type="string" size="64" description="代码类型"/>
+    <form-property prefix="select-key" name="index_description" type="string" size="64" description="代码描述"/>
+    <form-property prefix="select-key" name="codevalue" type="string" size="64" description="代码编号"/>
+    <form-property prefix="select-key" name="codename" type="string" size="128" description="代码说明"/>
+    <form-property prefix="select-key" name="sortvalue" type="string" size="64" cannull="false" description="分类名称"/>
+    <form-property prefix="record" name="codetype" array-flag="true" type="string" size="64" description="代码类型"/>
+    <form-property prefix="record" name="codevalue" array-flag="true" type="string" size="64" description="代码编号"/>
+    <form-property prefix="record" name="codename" array-flag="true" type="string" size="128" description="代码说明"/>
+    <form-property prefix="record" name="sortvalue" array-flag="true" type="string" size="64" cannull="false" description="分类名称"/>
+    <form-property prefix="record" name="status" array-flag="true" type="int" cannull="false" description="使用标志"/>
+    <form-property prefix="record" name="startdate" array-flag="true" type="string" size="8" cannull="false" description="启用日期"/>
+    <form-property prefix="record" name="stopdate" array-flag="true" type="string" size="8" cannull="false" description="终止日期"/>
+    <form-property prefix="record" name="delreason" array-flag="true" type="string" size="128" cannull="false" description="注销原因"/>
+  </form-bean>
+
+  <form-bean name="CodedataUpdateForm">
+    <description>单记录处理：查询、修改、增加</description>
+    <form-property prefix="primary-key" name="codetype" type="string" size="64" description="代码类型"/>
+    <form-property prefix="primary-key" name="codevalue" type="string" size="64" description="代码编号"/>
+    <form-property prefix="record" name="codetype" type="string" size="64" description="代码类型"/>
+    <form-property prefix="record" name="codevalue" type="string" size="64" description="代码编号"/>
+    <form-property prefix="record" name="codename" type="string" size="128" description="代码说明"/>
+    <form-property prefix="record" name="sortvalue" type="string" size="64" cannull="false" description="分类名称"/>
+    <form-property prefix="record" name="status" type="int" cannull="false" description="使用标志"/>
+    <form-property prefix="record" name="startdate" type="string" size="8" cannull="false" description="启用日期"/>
+    <form-property prefix="record" name="stopdate" type="string" size="8" cannull="false" description="终止日期"/>
+    <form-property prefix="record" name="delreason" type="string" size="128" cannull="false" description="注销原因"/>
+  </form-bean>
+  
+  <form-bean name="LoadCodeListForm">
+    <description>用于下载代码列表</description>
+    <form-property prefix="control-node" name="codetype" type="string" size="64" description="代码类型"/>
+    <form-property prefix="control-node" name="class-name" type="string" size="64" description="组件名称"/>
+    <form-property prefix="control-node" name="method-name" type="string" size="64" description="方法"/>
+    <form-property prefix="selected-code-list" name="codevalue" array-flag="true" type="string" size="64" description="代码编号"/>
+    <form-property prefix="selected-code-list" name="codename" array-flag="true" type="string" size="128" description="代码说明"/>
+    <form-property prefix="selected-code-list" name="sortvalue" array-flag="true" type="string" size="64" description="分类名称"/>
+    <form-property prefix="selected-code-list" name="status" array-flag="true" type="string" description="使用标志"/>
+    <form-property prefix="selected-code-list" name="description" array-flag="true" type="string" description="描述"/>
+  </form-bean>
+
+</form-beans>
+<action-mappings>
+  <action input="querycodelist.jsp" name="CodeindexRowsetForm" txn-code="980001" scope="request" re-entry="true">
+    <description>代码列表查询</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="select-key" output-node="record">
+      <init-value property="tablename" value="codeindex"/>
+      <init-value property="funcname" value="select codeindex list"/>
+    </step>
+    <forward error-code="success" path="querycodelist.jsp"/>
+    <forward error-code="failure" path="querycodelist.jsp"/>
+  </action>
+
+  <action input="insertcodelist.jsp" name="CodeindexUpdateForm" txn-code="980002" scope="request">
+    <description>增加代码列表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="record">
+      <init-value property="tablename" value="codeindex"/>
+      <init-value property="funcname" value="insert one codeindex"/>
+    </step>
+    <forward error-code="success" path="insertcodelist.jsp"/>
+    <forward error-code="failure" path="insertcodelist.jsp"/>
+  </action>
+
+  <action input="querycodelist.jsp" name="CodeindexUpdateForm" txn-code="980003" scope="request" re-entry="true">
+    <description>查询代码列表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="primary-key" output-node="record">
+      <init-value property="tablename" value="codeindex"/>
+      <init-value property="funcname" value="select one codeindex"/>
+    </step>
+    <forward error-code="success" path="updatecodelist.jsp"/>
+    <forward error-code="delete" path="deletecodelist.jsp"/>
+    <forward error-code="failure" path="updatecodelist.jsp"/>
+  </action>
+
+  <action input="deletecodelist.jsp" name="CodeindexUpdateForm" txn-code="980004" scope="request">
+    <description>删除代码列表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="record">
+      <init-value property="tablename" value="codeindex"/>
+      <init-value property="funcname" value="delete one codeindex"/>
+    </step>
+    <forward error-code="success" path="deletecodelist.jsp"/>
+    <forward error-code="failure" path="deletecodelist.jsp"/>
+  </action>
+
+  <action input="updatecodelist.jsp" name="CodeindexUpdateForm" txn-code="980005" scope="request">
+    <description>修改代码列表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="record">
+      <init-value property="tablename" value="codeindex"/>
+      <init-value property="funcname" value="update one codeindex"/>
+    </step>
+    <forward error-code="success" path="updatecodelist.jsp"/>
+    <forward error-code="failure" path="updatecodelist.jsp"/>
+  </action>
+
+  <action input="querycodedata.jsp" name="CodedataRowsetForm" txn-code="980011" scope="request" re-entry="true">
+    <description>代码对照表查询</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="select-key" output-node="record">
+      <init-value property="tablename" value="codedata"/>
+      <init-value property="funcname" value="select codedata list"/>
+    </step>
+    <forward error-code="success" path="querycodedata.jsp"/>
+    <forward error-code="failure" path="querycodedata.jsp"/>
+  </action>
+
+  <action input="insertcodedata.jsp" name="CodedataUpdateForm" txn-code="980012" scope="request">
+    <description>增加代码对照表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="record">
+      <init-value property="tablename" value="codedata"/>
+      <init-value property="funcname" value="insert one codedata"/>
+    </step>
+    <forward error-code="success" path="insertcodedata.jsp"/>
+    <forward error-code="failure" path="insertcodedata.jsp"/>
+  </action>
+
+  <action input="querycodedata.jsp" name="CodedataUpdateForm" txn-code="980013" scope="request" re-entry="true">
+    <description>查询代码对照表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="primary-key" output-node="record">
+      <init-value property="tablename" value="codedata"/>
+      <init-value property="funcname" value="select one codedata"/>
+    </step>
+    <forward error-code="success" path="updatecodedata.jsp"/>
+    <forward error-code="delete" path="deletecodedata.jsp"/>
+    <forward error-code="failure" path="updatecodedata.jsp"/>
+  </action>
+
+  <action input="deletecodedata.jsp" name="CodedataUpdateForm" txn-code="980014" scope="request">
+    <description>删除代码对照表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="record">
+      <init-value property="tablename" value="codedata"/>
+      <init-value property="funcname" value="delete one codedata"/>
+    </step>
+    <forward error-code="success" path="deletecodedata.jsp"/>
+    <forward error-code="failure" path="deletecodedata.jsp"/>
+  </action>
+
+  <action input="updatecodedata.jsp" name="CodedataUpdateForm" txn-code="980015" scope="request">
+    <description>修改代码对照表</description>
+    <step index="10" bean-name="cn.mars.common.txn.DaoService" bean-type="javabean" input-node="record">
+      <init-value property="tablename" value="codedata"/>
+      <init-value property="funcname" value="update one codedata"/>
+    </step>
+    <forward error-code="success" path="updatecodedata.jsp"/>
+    <forward error-code="failure" path="updatecodedata.jsp"/>
+  </action>
+
+  <action input="none" name="LoadCodeListForm" txn-code="FFFF01" scope="request" txn-type="system">
+    <description>根据自定义函数下载代码列表</description>
+    <step index="10" bean-name="cn.mars.common.txn.TxnCodeList" bean-type="javabean" input-node="control-node" output-node="selected-code-list"/>
+  </action>
+
+  <action input="none" name="LoadCodeListForm" txn-code="FFFF02" scope="request" txn-type="system">
+    <description>下载代码列表</description>
+    <step index="10" bean-name="cn.mars.common.txn.TxnCodeList" bean-type="javabean" input-node="control-node" output-node="selected-code-list">
+      <init-value property="tablename" value="codedata"/>
+    </step>
+  </action>
+
+</action-mappings>
+</struts-config>

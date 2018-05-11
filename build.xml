@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<project name="demo" default="all" basedir=".">
+
+<!-- ==================== 文件 和 目录 定义 ======================== -->
+
+
+<!--
+  app.name             这个应用程序的名称，用于构建文件名和目录
+  app.path             应用程序发布的目录 (缺省是 "/" ，在这和app.name是一样的).
+  app.version          这个应用程序的版本号.
+  war.home			   ${bea.home}/user_projects/domains/mars/applications
+-->
+
+  <property name="app.name"  value="demo.war"/>
+  <property name="src.home"  value="${basedir}/src"/>
+  <property name="web.home"  value="C:/bea/user_projects/domains/mars/applications/demo"/>
+  <property name="classes.home"   value="${web.home}/WEB-INF/classes"/>
+  <property name="lib.home"  value="${web.home}/WEB-INF/lib"/>
+  <property name="war.home"    value="${basedir}"/>
+
+  <property name="bea.home"  value="c:/bea" />
+  <property name="extends-lib.home"  value="${bea.home}/weblogic81/server/lib"/>
+
+
+
+<!--  ==================== Compilation Control Options ==================== -->
+
+<!--
+  使用 <javac> task.
+  compile.debug        Should compilation include the debug option?
+  compile.deprecation  Should compilation include the deprecation option?
+  compile.optimize     Should compilation include the optimize option?
+-->
+
+  <property name="compile.debug"       value="true"/>
+  <property name="compile.deprecation" value="false"/>
+  <property name="compile.optimize"    value="true"/>
+
+<!-- ==================== 编译组织的类路径=========================== -->
+
+
+  <path id="compile.classpath">
+    <fileset dir="${lib.home}">
+      <include name="*.jar" />
+      <include name="*.zip" />
+    </fileset>
+    <fileset dir="${extends-lib.home}">
+        <include name="weblogic.jar" />
+    </fileset>
+  </path>
+
+
+
+<!-- ==================== All Target ====================================== -->
+
+  <target name="all" depends="compile" description="Clean build and dist directories, then compile"/>
+
+
+
+<!-- ==================== Init Target ================================== -->
+  <target name="init" description="Initialize for build">
+  	<mkdir dir="${classes.home}"/>
+  </target>
+
+
+<!-- ==================== Compile Target ================================== -->
+
+  <target name="compile" depends="init" description="Compile Java sources">
+   <delete dir="${classes.home}"/>
+
+    <!-- Compile Java classes as necessary -->
+    <javac srcdir="${src.home}"
+			encoding="GBK"
+			destdir="${classes.home}"
+            debug="${compile.debug}"
+		 deprecation="${compile.deprecation}"
+         optimize="${compile.optimize}">
+        <classpath refid="compile.classpath"/>
+    </javac>
+
+   <!-- ============= .war ================ -->
+	<war warfile="${war.home}/${app.name}" webxml="${web.home}/WEB-INF/web.xml">
+		<fileset dir="${web.home}"/>
+	</war>
+  </target>
+
+</project>

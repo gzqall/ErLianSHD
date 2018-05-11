@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="GBK"?>
+<dependance>
+  <lib>
+    <depend-jar desc="SPARK必须的JAR文件">
+      <jar name="rocket-common.jar" description=""/>
+      <jar name="axiom-api-1.2.5.jar" description=""/>
+      <jar name="axiom-dom-1.2.5.jar" description=""/>
+      <jar name="axiom-impl-1.2.5.jar" description=""/>
+      <jar name="axis2-adb-1.3.jar" description=""/>
+      <jar name="axis2-kernel-1.3.jar" description=""/>
+      <jar name="axis2-metadata-1.3.jar" description=""/>
+      <jar name="axis2-xmlbeans-1.3.jar" description=""/>
+      <jar name="neethi-2.0.2.jar" description=""/>
+      <jar name="wsdl4j-1.6.2.jar" description=""/>
+      <jar name="ws-policy-SNAPSHOT.jar" description=""/>
+      <jar name="bcprov-jdk15-139.jar" description=""/>
+      <jar name="jce-jdk13-139.jar" description=""/>
+      <jar name="je-3.2.76.jar" description=""/>
+      <jar name="jfreechart-1.0.13.jar" description=""/>
+      <jar name="jcommon-1.0.16.jar" description=""/>
+      <jar name="iText-2.1.7.jar" description=""/>
+      <jar name="iText-rtf-2.1.5.jar" description=""/>
+      <jar name="rocket-commons-el-1.0.jar" description=""/>
+      <jar name="iTextAsian.jar" description=""/>
+      <jar name="avalon-logkit-2.1.jar" description=""/>
+      <jar name="commons-logging-1.1.jar" description=""/>
+      <jar name="log4j-1.2.14.jar" description=""/>
+      <jar name="resolver-2.9.0.jar" description=""/>
+      <jar name="xercesImpl-2.9.0.jar" description=""/>
+      <jar name="xml-apis-2.9.0.jar" description=""/>
+      <jar name="XmlSchema-1.4.2.jar" description=""/>
+      <jar name="rocket-unit.jar" description=""/>
+      <jar name="matra-0.8.2b.jar" description=""/>
+      <jar name="jdom-1.1.jar" description=""/>
+      <jar name="wstx-asl-3.2.5.jar" description=""/>
+      <jar name="stax-api-1.0.1.jar" description=""/>
+      <jar name="rocket-web.jar" description=""/>
+      <jar name="poi-3.10-FINAL-20140208.jar" description="POI工具包"/>
+      <jar name="poi-ooxml-3.10-FINAL-20140208.jar" description="POI工具包"/>
+      <jar name="poi-ooxml-schemas-3.10-FINAL-20140208.jar" description="POI工具包"/>
+      <jar name="velocity-1.6.2.jar" description=""/>
+      <jar name="werken-xpath-0.9.4.jar" description=""/>
+      <jar name="hsqldb.jar" description=""/>
+      <jar name="backport-util-concurrent-java5-3.1.jar" description=""/>
+      <jar name="commons-httpclient-3.0.1.jar" description=""/>
+      <jar name="commons-codec-1.3.jar" description=""/>
+      <jar name="commons-digester-1.8.jar" description=""/>
+      <jar name="commons-collections-3.2.1.jar" description=""/>
+      <jar name="commons-io-1.4.jar" description=""/>
+      <jar name="commons-lang-2.4.jar" description=""/>
+      <jar name="rocket.jar" description=""/>
+      <jar name="commons-beanutils-1.8.2.jar" description=""/>
+      <jar name="commons-javaflow-20060411.jar" description=""/>
+      <jar name="groovy-all-1.5.5.jar" description=""/>
+      <jar name="commons-fileupload-1.2.1.jar" description=""/>
+      <jar name="commons-net-2.0.jar" description=""/>
+      <jar name="oro-2.0.8.jar" description=""/>
+      <jar name="annogen-0.1.0.jar" description=""/>
+      <jar name="org-netbeans-lib-cvsclient.jar" description=""/>
+      <jar name="mail-1.4.jar" description=""/>
+      <jar name="activation-1.1.jar" description=""/>
+      <jar name="lucene-core-2.3.1.jar" description=""/>
+      <jar name="ant.jar" description=""/>
+      <jar name="ant-launcher.jar" description=""/>
+      <jar name="antlr-2.7.5.jar" description=""/>
+      <jar name="jasperreports-3.7.4.jar" description=""/>
+      <jar name="jasperreports-fonts-3.7.4.jar" description=""/>
+      <jar name="jdt-compiler-3.1.1.jar" description=""/>
+      <jar name="asm-3.1.jar" description=""/>
+      <jar name="asm-commons-3.1.jar" description=""/>
+      <jar name="jgroups-core.jar" description=""/>
+      <jar name="guice-1.0.jar" description=""/>
+      <jar name="cglib-nodep-2.2_beta1.jar" description=""/>
+      <jar name="aopalliance.jar" description=""/>
+      <jar name="j2h.jar" description=""/>
+    </depend-jar>
+    <optional-jar desc="应用系统需要的JAR文件">
+      <jar name="activemq-core-5.1.0.jar" description=""/>
+      <jar name="geronimo-j2ee-management_1.0_spec-1.0.jar" description=""/>
+      <jar name="geronimo-jms_1.1_spec-1.1.1.jar" description=""/>
+      <jar name="geronimo-jta_1.0.1B_spec-1.0.1.jar" description=""/>
+<!--
+      <jar name="spark-tools.jar" description=""/>
+-->   
+    </optional-jar>
+    <ext-jar desc="SPARK扩展功能需要的JAR文件">
+      <jar name="servlet-api.jar" description=""/>
+      <jar name="xalan-2.7.0.jar" description=""/>
+      <jar name="barcode.jar" description=""/>
+      <jar name="itext2_rq.jar" description=""/>
+      <jar name="poi2.jar" description=""/>
+      <jar name="jai_codec.jar" description=""/>
+      <jar name="jai_core.jar" description=""/>
+      <jar name="report4.jar" description=""/>
+      <jar name="resource.jar" description=""/>
+      <jar name="webutil.jar" description=""/>
+	  <jar name="standard-1.1.2.jar" description=""/>
+      <jar name="jstl-1.1.2.jar" description=""/>
+    </ext-jar>
+    <project-jar desc="项目生成的JAR文件,加载时需要解析这些文件,查找DAO文件，依赖注入关系等">
+	<jar name="rocket-common.jar" description="SPARK的公共函数"/>
+	<jar name="rocket-web.jar" description="SPARK的WEB层框架"/>
+	<jar name="rocket.jar" description="SPARK的业务层框架"/>
+    </project-jar>
+  </lib>
+  <module>
+     <jar name="application.sar" description=""/> 
+     <jar name="bizpara.sar" description=""/> 
+     <jar name="bugfile.sar" description="错误信息跟踪" unit-test="false"/> 
+     <jar name="cn.mars.app.error.logger.sar" description="错误日志处理"/> 
+     <jar name="cn.mars.app.holiday.sar" description=""/> 
+     <jar name="cn.mars.app.instruction.sar" description="处理服务器指令的线程"/> 
+     <jar name="cn.mars.app.iquery.sar" description="" unit-test="false"/> 
+     <jar name="cn.mars.app.logger.sar" description="业务日志处理"/> 
+     <jar name="cn.mars.app.metadata.sar" description="元数据维护" unit-test="false"/> 
+     <jar name="cn.mars.app.rule.param.sar" description="规则参数维护模块"/> 
+     <jar name="cn.mars.app.words.sar" description="常用词维护" unit-test="false"/> 
+     <jar name="cn.mars.console.webservice.sar" description="WebService接口配置工具" unit-test="false"/> 
+     <jar name="cn.mars.plugin.action.sar" description=""/> 
+     <jar name="cn.mars.plugin.compiler.sar" description=""/> 
+     <jar name="cn.mars.plugin.classloader.sar" description=""/> 
+     <jar name="cn.mars.plugin.httpclient.sar" description="Http客户端程序" unit-test="false"/> 
+     <jar name="cn.mars.plugin.jdb.sar" description="嵌入式数据库" unit-test="false"/> 
+     <jar name="cn.mars.plugin.template.sar" description="模板引擎插件"/> 
+     <jar name="cn.mars.plugin.tools.sar" description="SPARK工具包" unit-test="false"/> 
+     <jar name="cn.mars.plugin.velocity.sar" description="集成Velocity的插件" unit-test="false"/> 
+     <jar name="cn.mars.plugin.jfreechart.sar" description="" unit-test="false"/> 
+     <jar name="cn.mars.plugin.web.export.sar" description=""/> 
+     <jar name="cn.mars.report.jasperreport.sar" description="" unit-test="false"/> 
+     <jar name="codemap.sar" description=""/> 
+     <jar name="console.sar" description="应用开发管理" unit-test="false"/> 
+     <jar name="document.sar" description="项目文档管理" unit-test="false"/> 
+     <jar name="java.mail.sar" description="电子邮件" unit-test="false"/> 
+     <jar name="errorcode.sar" description="错误代码维护" unit-test="false"/> 
+     <jar name="knowledge.sar" description="" unit-test="false"/> 
+     <jar name="notice.sar" description="" unit-test="false"/>
+     <jar name="page.layout.sar" description="" unit-test="false"/> 
+     <jar name="page.layout.system.sar" description="" unit-test="false"/> 
+     <jar name="page.layout.nogear.sar" description="" loader="false" unit-test="false"/> 
+     <jar name="plugin.datasource.sar" description=""/> 
+     <jar name="plugin.monitor.sar" description="日志监控模块" unit-test="false"/> 
+     <jar name="plugin.search.sar" description="全文搜索引擎" unit-test="false"/> 
+     <jar name="plugin.servlet.sar" description="扩展的servlet" unit-test="false"/> 
+     <jar name="plugin.theme.sar" description="BLOCK布局管理" unit-test="false"/> 
+     <jar name="plugin.transaction.sar" description="数据库事务管理"/> 
+     <jar name="plugin.xml.sar" description="XML解析程序"/> 
+     <jar name="cn.mars.app.sequence.sar" description=""/>
+     <jar name="cn.mars.app.config.system.sar" description="系统配置模块"/>
+     <jar name="system.login.sar" description="" unit-test="false"/>
+     <jar name="cn.mars.app.task.sar" description="" unit-test="false"/>
+     <jar name="login.sar" description=""/>
+     <jar name="workflow.sar" description="复核流程引擎"/>
+     <jar name="role.man.sar" description="角色功能模块"/>
+     <jar name="cn.mars.plugin.multicast.jgroup.sar" description="" loader="false" unit-test="false"/>
+     <jar name="cn.mars.app.google.gears.sar" description="GOOGLE离线客户端" unit-test="false"/>
+     <jar name="cn.mars.plugin.parser.sar" description="标记文件处理模块" unit-test="false"/>
+     <jar name="cn.mars.plugin.jms.sar" description="JMS(异步服务和批量服务)模块" loader="false" unit-test="false"/>
+     <jar name="cn.mars.plugin.jms.test.sar" description="JMS内部测试模块(免配置)" loader="false" unit-test="false"/>
+     <jar name="cn.mars.plugin.ioc.guice.sar" description="IOC容器接口(guice)模块"/>
+     <jar name="cn.mars.plugin.login.restrict.sar" description="限制用户多次登入" loader="false" unit-test="false"/>
+     <jar name="plugin.addcode.sar" description="登入时验证码校验模块" loader="true" unit-test="false"/>
+     <jar name="plugin.auth.sar" description="用户权限验证模块" loader="false" unit-test="false"/>
+     <jar name="cn.mars.app.sms.sar" description="即时信息模块" unit-test="false"/>
+     <jar name="cn.mars.app.biz.config.sar" description=""/> 
+     <jar name="cn.mars.plugin.file.sar" description=""/> 
+     <jar name="cn.mars.app.ifile.sar" description=""/> 
+     <jar name="cn.mars.app.isql.sar" description=""/> 
+     <jar name="cn.mars.test.sar" description="SPARK测试程序" loader="true" unit-test="false"/>
+	 <jar name="plugin.monitor.extend.sar" description="实时监控扩展包" loader="false" unit-test="false"/>
+  </module>
+</dependance>

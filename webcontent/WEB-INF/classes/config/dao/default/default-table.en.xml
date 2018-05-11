@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE columns SYSTEM "default-database.dtd">
+<table>
+	<table-info default-filter="yxbz=0"/>
+	
+	<column name="lsh" data-type="integer" not-null="true" value-from="sequence" value-set="flowid" description="lsh" />
+	<column name="bh" data-type="integer" not-null="true" value-from="sequence" value-set="flowid" description="参数值" />
+	<column name="yxbz" data-type="integer" not-null="true" value-from="input" default="0" description="yxbz" replace="true"/>
+	<column name="czy" data-type="varchar" value-from="generate" func-name="operName" length="12" description="操作员" replace="true"/>
+	<column name="czsj" data-type="char" value-from="generate" func-name="currentDateTime" length="14" description="操作时间" replace="true"/>
+	<column name="czdwbh" data-type="varchar" value-from="generate" func-name="orgName" length="12" description="操作单位编号" replace="true"/>
+	<column name="czjym" data-type="char" value-from="generate" func-name="txnCode" length="10" description="操作交易码" replace="true"/>	
+	<column name="byzd" data-type="varchar" value-from="input" length="100" description="备用字段" />	
+	<column name="byzd1" data-type="varchar" value-from="input" length="100" description="备用字段1" />	
+	<column name="byzd2" data-type="varchar" value-from="input" length="100" description="备用字段2" />	
+	
+	<function func-type="rowset" need-column="lsh" default-filter="yxbz=0">
+		<description>多记录查询</description>
+	</function>
+	
+	<function func-type="select" need-column="lsh" default-filter="yxbz=0">
+		<description>单记录查询</description>
+	</function>
+	
+	<function func-type="insert" need-column="lsh,bh,yxbz,czy,czsj,czdwbh,czjym,byzd,byzd1,byzd2">
+		<description>增加记录</description>
+	</function>
+	
+	<function func-type="update" need-column="czy,czsj,czdwbh,czjym,byzd,byzd1,byzd2" disable-column="lsh,bh" default-filter="yxbz=0">
+		<description>修改记录</description>
+	</function>
+	
+	<function func-type="delete" default-filter="yxbz=0">
+		<description>删除记录</description>
+	</function>
+</table>

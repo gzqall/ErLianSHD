@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE mars-config SYSTEM "mars-config.dtd">
+<mars-config>
+  <jdbc>
+    <database db-name="elshd" db-type="jdbc" db-server="mysql" db-transaction="jdbc" db-isolation="read_committed" sync-table="true">
+      <db-url>jdbc:mysql://localhost:3306/elshddb?characterEncoding=gbk&amp;autoReconnect=true</db-url>
+      <db-driver>org.gjt.mm.mysql.Driver</db-driver>
+      <db-username>root</db-username>
+      <db-password>gzqall</db-password>
+      <value-class>cn.mars.common.dao.util.GenerateValue</value-class>
+    </database>
+  </jdbc>
+
+  <txn-containers>
+    <container name="default">
+      <type>javabean</type>
+      <clazz>cn.mars.common.txn.TxnBroker</clazz>
+    </container>
+
+    <container name="local">
+      <type>local-ejb</type>
+      <clazz>cn.mars.common.txn.TxnBroker</clazz>
+      <url>t3://spark:7011</url>
+      <username>weblogic</username>
+      <password>weblogic</password>
+    </container>
+
+    <container name="servlet">
+      <type>servlet</type>
+    </container>
+  </txn-containers>
+
+  <txn-flows>
+    <txn-flow flow-id="workflow" description="工作流"/>
+  </txn-flows>
+
+  <page>
+    <login-page>/index.jsp</login-page>
+    <logout-page>/logout.jsp</logout-page>
+    <error-page>/script/public/error.jsp</error-page>
+    <home-page>/welcome.jsp</home-page>
+  </page>
+
+  <user-config>
+    <property name="struts-file" value="/WEB-INFO/struts-config.xml"/>
+  </user-config>
+
+  <controller>
+    <start-mode>test</start-mode>
+    <upload-path>$HOME/../../temp/data</upload-path>
+    <download-path>$HOME/../../temp/data</download-path>
+    <resource-path>$HOME/../../temp/resource/</resource-path>
+    <share-path>$HOME/../../FILES</share-path>
+    <is-write-log>false</is-write-log>
+    <is-write-error>false</is-write-error>
+    <is-msg-server>true</is-msg-server>
+    <is-task-server>true</is-task-server>
+    <jgroup-port>45588</jgroup-port>
+  </controller>
+
+  <jms/>
+  <cvs>
+	  <!--
+	<server-url>http://www.cointek.com.cn:8800/spark</server-url>
+	-->
+    <project-path>$HOME/../../../java/webcontent</project-path>
+    <src-path>$HOME/../../../java/src</src-path>
+  </cvs>
+
+  <char-set>GBK</char-set>
+  <ajax-char-set>UTF-8</ajax-char-set>
+  <file-encoding>GBK</file-encoding>
+  <jsp-encoding>GBK</jsp-encoding>
+  <message-resources parameter="config.resource.ApplicationResources"/>
+</mars-config>
+

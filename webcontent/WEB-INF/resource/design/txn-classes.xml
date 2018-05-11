@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE classes SYSTEM "mars-class.dtd">
+<classes>
+<clazz class-name="cn.mars.app.bizconfig.txn.TxnBizConfigFieldDef" description="业务配置定义" relation="cn.mars.app.bizconfig.dao.BizConfigFieldDefDao" sort-name="module">
+  <method method-name="txn981411" description="查询业务配置字段定义列表" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigFieldDef]的方法[]，查询业务配置字段定义列表" called-classes="cn.mars.app.bizconfig.dao.BizConfigFieldDef"/>
+  <method method-name="txn981412" description="修改业务配置字段定义信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigFieldDef]的方法[]，修改业务配置字段定义信息" called-classes="cn.mars.app.bizconfig.dao.BizConfigFieldDef"/>
+  <method method-name="txn981413" description="增加业务配置字段定义信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigFieldDef]的方法[]，增加业务配置字段定义信息" called-classes="cn.mars.app.bizconfig.dao.BizConfigFieldDef"/>
+  <method method-name="txn981414" description="查询业务配置字段定义用于修改" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigFieldDef]的方法[]，查询业务配置字段定义用于修改" called-classes="cn.mars.app.bizconfig.dao.BizConfigFieldDef"/>
+  <method method-name="txn981415" description="删除业务配置字段定义信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigFieldDef]的方法[]，删除业务配置字段定义信息" called-classes="cn.mars.app.bizconfig.dao.BizConfigFieldDef"/>
+</clazz>
+<clazz class-name="cn.mars.demo.hr.txn.TxnDEmployee1" description="雇员分类表" relation="cn.mars.demo.hr.dao.DEmployee1Dao" sort-name="demo">
+  <method method-name="txn933011" description="查询雇员列表" flow-design="调用实体类[cn.mars.demo.hr.dao.DEmployee1]的方法[]，查询雇员列表" called-classes="cn.mars.demo.hr.dao.DEmployee1"/>
+  <method method-name="txn933012" description="修改雇员信息" flow-design="调用实体类[cn.mars.demo.hr.dao.DEmployee1]的方法[]，修改雇员信息" called-classes="cn.mars.demo.hr.dao.DEmployee1"/>
+  <method method-name="txn933013" description="增加雇员信息" flow-design="调用实体类[cn.mars.demo.hr.dao.DEmployee1]的方法[]，增加雇员信息" called-classes="cn.mars.demo.hr.dao.DEmployee1"/>
+  <method method-name="txn933014" description="查询雇员用于修改" flow-design="调用实体类[cn.mars.demo.hr.dao.DEmployee1]的方法[]，查询雇员用于修改" called-classes="cn.mars.demo.hr.dao.DEmployee1"/>
+  <method method-name="txn933015" description="删除雇员信息" flow-design="调用实体类[cn.mars.demo.hr.dao.DEmployee1]的方法[]，删除雇员信息" called-classes="cn.mars.demo.hr.dao.DEmployee1"/>
+  <method method-name="txn933018" description="查询所有雇员列表" flow-design="调用实体类[cn.mars.demo.hr.dao.DEmployee1]的方法[]，查询所有雇员列表" called-classes="cn.mars.demo.hr.dao.DEmployee1"/>
+</clazz>
+<clazz class-name="cn.mars.demo.erp.txn.TxnDemoProduct" description="产品分类信息" relation="cn.mars.demo.erp.dao.DemoProductDao" sort-name="demo">
+  <method method-name="txn931211" description="查询产品列表" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProduct]的方法[]，查询产品列表" called-classes="cn.mars.demo.erp.dao.DemoProduct"/>
+  <method method-name="txn931212" description="修改产品信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProduct]的方法[]，修改产品信息" called-classes="cn.mars.demo.erp.dao.DemoProduct"/>
+  <method method-name="txn931213" description="增加产品信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProduct]的方法[]，增加产品信息" called-classes="cn.mars.demo.erp.dao.DemoProduct"/>
+  <method method-name="txn931214" description="查询产品用于修改" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProduct]的方法[]，查询产品用于修改" called-classes="cn.mars.demo.erp.dao.DemoProduct"/>
+  <method method-name="txn931215" description="删除产品信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProduct]的方法[]，删除产品信息" called-classes="cn.mars.demo.erp.dao.DemoProduct"/>
+  <method method-name="txn931216" description="查看产品的记录信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProduct]的方法[]，查看产品的记录信息" called-classes="cn.mars.demo.erp.dao.DemoProduct"/>
+  <method method-name="txn931217" description="查看产品的修改日志" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProduct]的方法[]，查看产品的修改日志" called-classes="cn.mars.demo.erp.dao.DemoProduct"/>
+</clazz>
+<clazz class-name="cn.mars.app.iquery.txn.TxnCommonQuery" description="通用查询配置" relation="cn.mars.app.iquery.dao.CommonQueryDao" sort-name="module">
+  <method method-name="txn980691" description="通用查询－生成页面" flow-design="调用实体类[cn.mars.app.iquery.dao.CommonQuery]的方法[]，通用查询－生成页面" called-classes="cn.mars.app.iquery.dao.CommonQuery"/>
+  <method method-name="txn980692" description="通用查询－查询结果" flow-design="调用实体类[cn.mars.app.iquery.dao.CommonQuery]的方法[]，通用查询－查询结果" called-classes="cn.mars.app.iquery.dao.CommonQuery"/>
+  <method method-name="txn980693" description="取当前用户的通用查询列表" flow-design="调用实体类[cn.mars.app.iquery.dao.CommonQuery]的方法[]，取当前用户的通用查询列表" called-classes="cn.mars.app.iquery.dao.CommonQuery"/>
+  <method method-name="txn980698" description="数据库查询" flow-design="调用实体类[cn.mars.app.iquery.dao.CommonQuery]的方法[]，数据库查询" called-classes="cn.mars.app.iquery.dao.CommonQuery"/>
+  <method method-name="txn980699" description="数据库查询" flow-design="调用实体类[cn.mars.app.iquery.dao.CommonQuery]的方法[]，数据库查询" called-classes="cn.mars.app.iquery.dao.CommonQuery"/>
+</clazz>
+<clazz class-name="cn.mars.app.bizlog.txn.TxnBizlog" description="业务日志查询" relation="cn.mars.app.bizlog.dao.BizlogDao" sort-name="module">
+  <method method-name="txn981211" description="查询业务日志列表" flow-design="调用实体类[cn.mars.app.bizlog.dao.Bizlog]的方法[]，查询业务日志列表" called-classes="cn.mars.app.bizlog.dao.Bizlog"/>
+  <method method-name="txn981214" description="查询业务日志" flow-design="调用实体类[cn.mars.app.bizlog.dao.Bizlog]的方法[]，查询业务日志" called-classes="cn.mars.app.bizlog.dao.Bizlog"/>
+  <method method-name="txn981216" description="用户日志查询" flow-design="调用实体类[cn.mars.app.bizlog.dao.Bizlog]的方法[]，用户日志查询" called-classes="cn.mars.app.bizlog.dao.Bizlog"/>
+</clazz>
+<clazz class-name="cn.mars.test.jms.TxnTestJmsService" description="JMS和异步调用测试" relation="cn.mars.test.jms.TestJmsServiceDao" sort-name="demo">
+  <method method-name="testJms" description="JMS测试" flow-design="调用实体类[cn.mars.test.jms.TestJmsService]的方法[]，JMS测试" called-classes="cn.mars.test.jms.TestJmsService"/>
+</clazz>
+<clazz class-name="cn.mars.demo.jchart.category.txn.TxnDatasetCategory" description="AREA图表" relation="cn.mars.demo.jchart.category.dao.DatasetCategoryDao" sort-name="demo">
+  <method method-name="txn910121" description="查询数据列表" flow-design="调用实体类[cn.mars.demo.jchart.category.dao.DatasetCategory]的方法[]，查询数据列表" called-classes="cn.mars.demo.jchart.category.dao.DatasetCategory"/>
+  <method method-name="txn910122" description="修改数据信息" flow-design="调用实体类[cn.mars.demo.jchart.category.dao.DatasetCategory]的方法[]，修改数据信息" called-classes="cn.mars.demo.jchart.category.dao.DatasetCategory"/>
+  <method method-name="txn910123" description="增加数据信息" flow-design="调用实体类[cn.mars.demo.jchart.category.dao.DatasetCategory]的方法[]，增加数据信息" called-classes="cn.mars.demo.jchart.category.dao.DatasetCategory"/>
+  <method method-name="txn910124" description="查询数据用于修改" flow-design="调用实体类[cn.mars.demo.jchart.category.dao.DatasetCategory]的方法[]，查询数据用于修改" called-classes="cn.mars.demo.jchart.category.dao.DatasetCategory"/>
+  <method method-name="txn910125" description="删除数据信息" flow-design="调用实体类[cn.mars.demo.jchart.category.dao.DatasetCategory]的方法[]，删除数据信息" called-classes="cn.mars.demo.jchart.category.dao.DatasetCategory"/>
+</clazz>
+<clazz class-name="cn.mars.app.codemap.txn.TxnCodeList" description="业务代码表维护" relation="cn.mars.app.codemap.dao.CodeListDao" sort-name="module">
+  <method method-name="txnFFFF01" description="根据自定义函数下载代码列表" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeList]的方法[]，根据自定义函数下载代码列表" called-classes="cn.mars.app.codemap.dao.CodeList"/>
+  <method method-name="txnFFFF02" description="从代码对照表下载代码列表" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeList]的方法[]，从代码对照表下载代码列表" called-classes="cn.mars.app.codemap.dao.CodeList"/>
+</clazz>
+<clazz class-name="cn.mars.app.security.txn.ServerCertificaty" description="签发证书管理" relation="cn.mars.app.security.dao.ServerCertificatyDao" sort-name="module">
+  <method method-name="txn902671" description="签发的证书列表" flow-design="调用实体类[cn.mars.app.security.dao.ServerCertificaty]的方法[]，签发的证书列表" called-classes="cn.mars.app.security.dao.ServerCertificaty"/>
+  <method method-name="txn902673" description="签发新的证书" flow-design="调用实体类[cn.mars.app.security.dao.ServerCertificaty]的方法[]，签发新的证书" called-classes="cn.mars.app.security.dao.ServerCertificaty"/>
+  <method method-name="txn902674" description="下载证书，其它服务器可以通过这个服务下载证书，不需要验证权限" flow-design="调用实体类[cn.mars.app.security.dao.ServerCertificaty]的方法[]，下载证书，其它服务器可以通过这个服务下载证书，不需要验证权限" called-classes="cn.mars.app.security.dao.ServerCertificaty"/>
+  <method method-name="txn902675" description="删除证书信息" flow-design="调用实体类[cn.mars.app.security.dao.ServerCertificaty]的方法[]，删除证书信息" called-classes="cn.mars.app.security.dao.ServerCertificaty"/>
+  <method method-name="txn902676" description="从主域服务器下载证书" flow-design="调用实体类[cn.mars.app.security.dao.ServerCertificaty]的方法[]，从主域服务器下载证书" called-classes="cn.mars.app.security.dao.ServerCertificaty"/>
+  <method method-name="txn902677" description="查看本机证书信息" flow-design="调用实体类[cn.mars.app.security.dao.ServerCertificaty]的方法[]，查看本机证书信息" called-classes="cn.mars.app.security.dao.ServerCertificaty"/>
+  <method method-name="txn902678" description="下载域内服务器的证书" flow-design="调用实体类[cn.mars.app.security.dao.ServerCertificaty]的方法[]，下载域内服务器的证书" called-classes="cn.mars.app.security.dao.ServerCertificaty"/>
+</clazz>
+<clazz class-name="cn.mars.demo.jchart.times.txn.TxnDatasetTimes" description="时间顺序图表" relation="cn.mars.demo.jchart.times.dao.DatasetTimesDao" sort-name="demo">
+  <method method-name="txn910131" description="查询数据列表" flow-design="调用实体类[cn.mars.demo.jchart.times.dao.DatasetTimes]的方法[]，查询数据列表" called-classes="cn.mars.demo.jchart.times.dao.DatasetTimes"/>
+  <method method-name="txn910132" description="修改数据信息" flow-design="调用实体类[cn.mars.demo.jchart.times.dao.DatasetTimes]的方法[]，修改数据信息" called-classes="cn.mars.demo.jchart.times.dao.DatasetTimes"/>
+  <method method-name="txn910133" description="增加数据信息" flow-design="调用实体类[cn.mars.demo.jchart.times.dao.DatasetTimes]的方法[]，增加数据信息" called-classes="cn.mars.demo.jchart.times.dao.DatasetTimes"/>
+  <method method-name="txn910134" description="查询数据用于修改" flow-design="调用实体类[cn.mars.demo.jchart.times.dao.DatasetTimes]的方法[]，查询数据用于修改" called-classes="cn.mars.demo.jchart.times.dao.DatasetTimes"/>
+  <method method-name="txn910135" description="删除数据信息" flow-design="调用实体类[cn.mars.demo.jchart.times.dao.DatasetTimes]的方法[]，删除数据信息" called-classes="cn.mars.demo.jchart.times.dao.DatasetTimes"/>
+</clazz>
+<clazz class-name="cn.mars.demo.erp.txn.TxnDemoOrderform" description="订单管理" relation="cn.mars.demo.erp.dao.DemoOrderformDao" sort-name="demo">
+  <method method-name="txn932021" description="查询订单列表" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderform]的方法[]，查询订单列表" called-classes="cn.mars.demo.erp.dao.DemoOrderform"/>
+  <method method-name="txn932022" description="修改订单信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderform]的方法[]，修改订单信息" called-classes="cn.mars.demo.erp.dao.DemoOrderform"/>
+  <method method-name="txn932023" description="增加订单信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderform]的方法[]，增加订单信息" called-classes="cn.mars.demo.erp.dao.DemoOrderform"/>
+  <method method-name="txn932024" description="查询订单用于修改" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderform]的方法[]，查询订单用于修改" called-classes="cn.mars.demo.erp.dao.DemoOrderform"/>
+  <method method-name="txn932025" description="删除订单信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderform]的方法[]，删除订单信息" called-classes="cn.mars.demo.erp.dao.DemoOrderform"/>
+  <method method-name="txn932026" description="订单的记录信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderform]的方法[]，订单的记录信息" called-classes="cn.mars.demo.erp.dao.DemoOrderform"/>
+</clazz>
+<clazz class-name="cn.mars.demo.corp.txn.TxnDDept" description="延迟加载树" relation="cn.mars.demo.corp.dao.DDeptDao" sort-name="demo">
+  <method method-name="txn931051" description="查询部门列表" flow-design="调用实体类[cn.mars.demo.corp.dao.DDept]的方法[]，查询部门列表" called-classes="cn.mars.demo.corp.dao.DDept"/>
+  <method method-name="txn931052" description="修改部门信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DDept]的方法[]，修改部门信息" called-classes="cn.mars.demo.corp.dao.DDept"/>
+  <method method-name="txn931053" description="增加部门信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DDept]的方法[]，增加部门信息" called-classes="cn.mars.demo.corp.dao.DDept"/>
+  <method method-name="txn931054" description="查询部门用于修改" flow-design="调用实体类[cn.mars.demo.corp.dao.DDept]的方法[]，查询部门用于修改" called-classes="cn.mars.demo.corp.dao.DDept"/>
+  <method method-name="txn931055" description="删除部门信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DDept]的方法[]，删除部门信息" called-classes="cn.mars.demo.corp.dao.DDept"/>
+</clazz>
+<clazz class-name="cn.mars.demo.jchart.overlay.txn.TxnDatasetOverlay" description="overlayXY图表" relation="cn.mars.demo.jchart.overlay.dao.DatasetOverlayDao" sort-name="demo">
+  <method method-name="txn910141" description="查询数据列表" flow-design="调用实体类[cn.mars.demo.jchart.overlay.dao.DatasetOverlay]的方法[]，查询数据列表" called-classes="cn.mars.demo.jchart.overlay.dao.DatasetOverlay"/>
+  <method method-name="txn910142" description="修改数据信息" flow-design="调用实体类[cn.mars.demo.jchart.overlay.dao.DatasetOverlay]的方法[]，修改数据信息" called-classes="cn.mars.demo.jchart.overlay.dao.DatasetOverlay"/>
+  <method method-name="txn910143" description="增加数据信息" flow-design="调用实体类[cn.mars.demo.jchart.overlay.dao.DatasetOverlay]的方法[]，增加数据信息" called-classes="cn.mars.demo.jchart.overlay.dao.DatasetOverlay"/>
+  <method method-name="txn910144" description="查询数据用于修改" flow-design="调用实体类[cn.mars.demo.jchart.overlay.dao.DatasetOverlay]的方法[]，查询数据用于修改" called-classes="cn.mars.demo.jchart.overlay.dao.DatasetOverlay"/>
+  <method method-name="txn910145" description="删除数据信息" flow-design="调用实体类[cn.mars.demo.jchart.overlay.dao.DatasetOverlay]的方法[]，删除数据信息" called-classes="cn.mars.demo.jchart.overlay.dao.DatasetOverlay"/>
+</clazz>
+<clazz class-name="cn.mars.demo.oa.txn.TxnDComputer" description="计算机管理" relation="cn.mars.demo.oa.dao.DComputerDao" sort-name="demo">
+  <method method-name="txn932011" description="查询计算机列表" flow-design="调用实体类[cn.mars.demo.oa.dao.DComputer]的方法[]，查询计算机列表" called-classes="cn.mars.demo.oa.dao.DComputer"/>
+  <method method-name="txn932012" description="修改计算机信息" flow-design="调用实体类[cn.mars.demo.oa.dao.DComputer]的方法[]，修改计算机信息" called-classes="cn.mars.demo.oa.dao.DComputer"/>
+  <method method-name="txn932013" description="增加计算机信息" flow-design="调用实体类[cn.mars.demo.oa.dao.DComputer]的方法[]，增加计算机信息" called-classes="cn.mars.demo.oa.dao.DComputer"/>
+  <method method-name="txn932014" description="查询计算机用于修改" flow-design="调用实体类[cn.mars.demo.oa.dao.DComputer]的方法[]，查询计算机用于修改" called-classes="cn.mars.demo.oa.dao.DComputer"/>
+  <method method-name="txn932015" description="删除计算机信息" flow-design="调用实体类[cn.mars.demo.oa.dao.DComputer]的方法[]，删除计算机信息" called-classes="cn.mars.demo.oa.dao.DComputer"/>
+</clazz>
+<clazz class-name="cn.mars.app.wf.txn.TxnTodolist" description="所有任务列表" relation="cn.mars.app.wf.dao.TodolistDao" sort-name="module">
+  <method method-name="txn970201" description="查询所有任务列表" flow-design="调用实体类[cn.mars.app.wf.dao.Todolist]的方法[]，查询所有任务列表" called-classes="cn.mars.app.wf.dao.Todolist"/>
+  <method method-name="txn970202" description="查询已处理的任务列表" flow-design="调用实体类[cn.mars.app.wf.dao.Todolist]的方法[]，查询已处理的任务列表" called-classes="cn.mars.app.wf.dao.Todolist"/>
+  <method method-name="txn970203" description="查询待处理的任务列表" flow-design="调用实体类[cn.mars.app.wf.dao.Todolist]的方法[]，查询待处理的任务列表" called-classes="cn.mars.app.wf.dao.Todolist"/>
+</clazz>
+<clazz class-name="cn.mars.demo.erp.txn.TxnDemoProductType" description="产品分类信息" relation="cn.mars.demo.erp.dao.DemoProductTypeDao" sort-name="demo">
+  <method method-name="txn931201" description="查询分类列表" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，查询分类列表" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931202" description="修改分类信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，修改分类信息" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931203" description="增加分类信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，增加分类信息" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931204" description="查询分类用于修改" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，查询分类用于修改" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931205" description="删除分类信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，删除分类信息" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931206" description="查看分类的记录信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，查看分类的记录信息" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931207" description="查看分类的修改日志" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，查看分类的修改日志" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931208" description="分类的目录结构，用于生成树" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，分类的目录结构，用于生成树" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn931209" description="修改分类的目录结构，用于节点的拖动" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，修改分类的目录结构，用于节点的拖动" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn93120a" description="修改分类的分类代码信息，用于树的分类代码修改" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，修改分类的分类代码信息，用于树的分类代码修改" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+  <method method-name="txn93120c" description="修改分类的标题，用于树节点的标题编辑" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoProductType]的方法[]，修改分类的标题，用于树节点的标题编辑" called-classes="cn.mars.demo.erp.dao.DemoProductType"/>
+</clazz>
+<clazz class-name="cn.mars.app.bizconfig.txn.TxnBizConfig" description="业务配置" relation="cn.mars.app.bizconfig.dao.BizConfigDao" sort-name="module">
+  <method method-name="txn981421" description="查询业务配置内容" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，查询业务配置内容" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981422" description="修改业务信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，修改业务信息" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981423" description="增加业务信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，增加业务信息" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981424" description="查询业务用于修改" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，查询业务用于修改" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981425" description="删除业务信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，删除业务信息" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981431" description="查询业务配置表内容" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，查询业务配置表内容" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981432" description="更新业务配置信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，更新业务配置信息" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981433" description="组织插入业务配置页面" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，组织插入业务配置页面" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981434" description="组织更新业务配置页面" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，组织更新业务配置页面" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981435" description="删除业务配置信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，删除业务配置信息" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+  <method method-name="txn981436" description="插入业务配置信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfig]的方法[]，插入业务配置信息" called-classes="cn.mars.app.bizconfig.dao.BizConfig"/>
+</clazz>
+<clazz class-name="cn.mars.app.dict.txn.TxnDictItem" description="数据字典维护" relation="cn.mars.app.dict.dao.DictItemDao" sort-name="module">
+  <method method-name="txn903211" description="查询数据项列表" flow-design="调用实体类[cn.mars.app.dict.dao.DictItem]的方法[]，查询数据项列表" called-classes="cn.mars.app.dict.dao.DictItem"/>
+  <method method-name="txn903212" description="修改数据项信息" flow-design="调用实体类[cn.mars.app.dict.dao.DictItem]的方法[]，修改数据项信息" called-classes="cn.mars.app.dict.dao.DictItem"/>
+  <method method-name="txn903213" description="增加数据项信息" flow-design="调用实体类[cn.mars.app.dict.dao.DictItem]的方法[]，增加数据项信息" called-classes="cn.mars.app.dict.dao.DictItem"/>
+  <method method-name="txn903214" description="查询数据项用于修改" flow-design="调用实体类[cn.mars.app.dict.dao.DictItem]的方法[]，查询数据项用于修改" called-classes="cn.mars.app.dict.dao.DictItem"/>
+  <method method-name="txn903215" description="删除数据项信息" flow-design="调用实体类[cn.mars.app.dict.dao.DictItem]的方法[]，删除数据项信息" called-classes="cn.mars.app.dict.dao.DictItem"/>
+</clazz>
+<clazz class-name="cn.mars.app.startuplog.txn.TxnStartupLog" description="启动日志查询" relation="cn.mars.app.startuplog.dao.StartupLogDao" sort-name="module">
+  <method method-name="txn991241" description="生成目录树" flow-design="调用实体类[cn.mars.app.startuplog.dao.StartupLog]的方法[]，生成目录树" called-classes="cn.mars.app.startuplog.dao.StartupLog"/>
+  <method method-name="txn991242" description="查询启动日志" flow-design="调用实体类[cn.mars.app.startuplog.dao.StartupLog]的方法[]，查询启动日志" called-classes="cn.mars.app.startuplog.dao.StartupLog"/>
+  <method method-name="txn991244" description="查看启动日志" flow-design="调用实体类[cn.mars.app.startuplog.dao.StartupLog]的方法[]，查看启动日志" called-classes="cn.mars.app.startuplog.dao.StartupLog"/>
+</clazz>
+<clazz class-name="cn.mars.app.priv.txn.TxnFunctxn" description="功能交易信息" relation="cn.mars.app.priv.dao.FunctxnDao" sort-name="module">
+  <method method-name="txn980311" description="查询功能交易列表" flow-design="调用实体类[cn.mars.app.priv.dao.Functxn]的方法[]，查询功能交易列表" called-classes="cn.mars.app.priv.dao.Functxn"/>
+  <method method-name="txn980313" description="增加功能交易资料" flow-design="调用实体类[cn.mars.app.priv.dao.Functxn]的方法[]，增加功能交易资料" called-classes="cn.mars.app.priv.dao.Functxn"/>
+  <method method-name="txn980315" description="删除功能交易信息" flow-design="调用实体类[cn.mars.app.priv.dao.Functxn]的方法[]，删除功能交易信息" called-classes="cn.mars.app.priv.dao.Functxn"/>
+  <method method-name="txn980316" description="批量查询交易列表" flow-design="调用实体类[cn.mars.app.priv.dao.Functxn]的方法[]，批量查询交易列表" called-classes="cn.mars.app.priv.dao.Functxn"/>
+  <method method-name="txn980317" description="批量增加交易列表" flow-design="调用实体类[cn.mars.app.priv.dao.Functxn]的方法[]，批量增加交易列表" called-classes="cn.mars.app.priv.dao.Functxn"/>
+</clazz>
+<clazz class-name="cn.mars.app.wf.txn.TxnFlowDef" description="复核流程配置" relation="cn.mars.app.wf.dao.FlowDefDao" sort-name="module">
+  <method method-name="getFlowDefine" description="获取流程的配置信息" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，获取流程的配置信息" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+  <method method-name="txn980401" description="查询复核流程列表" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，查询复核流程列表" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+  <method method-name="txn980402" description="修改复核流程资料" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，修改复核流程资料" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+  <method method-name="txn980403" description="增加复核流程资料" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，增加复核流程资料" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+  <method method-name="txn980404" description="查询复核流程用于修改" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，查询复核流程用于修改" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+  <method method-name="txn980405" description="删除复核流程信息" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，删除复核流程信息" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+  <method method-name="txn980407" description="修改流程的上级节点" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，修改流程的上级节点" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+  <method method-name="txn98040c" description="查询流程的名称" flow-design="调用实体类[cn.mars.app.wf.dao.FlowDef]的方法[]，查询流程的名称" called-classes="cn.mars.app.wf.dao.FlowDef"/>
+</clazz>
+<clazz class-name="cn.mars.app.iquery.txn.TxnQueryConfig" description="通用查询配置" relation="cn.mars.app.iquery.dao.QueryConfigDao" sort-name="module">
+  <method method-name="txn980611" description="取通用查询列表" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，取通用查询列表" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+  <method method-name="txn980612" description="修改通用查询信息" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，修改通用查询信息" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+  <method method-name="txn980613" description="增加通用查询信息" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，增加通用查询信息" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+  <method method-name="txn980614" description="取通用查询信息用于修改" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，取通用查询信息用于修改" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+  <method method-name="txn980615" description="删除通用查询信息" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，删除通用查询信息" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+  <method method-name="txn980618" description="生成通用查询目录树" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，生成通用查询目录树" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+  <method method-name="txn98061b" description="修改记录的状态" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，修改记录的状态" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+  <method method-name="txn98061c" description="下载配置文件" flow-design="调用实体类[cn.mars.app.iquery.dao.QueryConfig]的方法[]，下载配置文件" called-classes="cn.mars.app.iquery.dao.QueryConfig"/>
+</clazz>
+<clazz class-name="cn.mars.app.sequence.txn.TxnSerialService" description="取业务序列号" relation="cn.mars.app.sequence.dao.SerialServiceDao" sort-name="module">
+  <method method-name="txnFFFF03" description="取序列号" flow-design="调用实体类[cn.mars.app.sequence.dao.SerialService]的方法[]，取序列号" called-classes="cn.mars.app.sequence.dao.SerialService"/>
+</clazz>
+<clazz class-name="cn.mars.demo.jchart.xy.txn.TxnDatasetSy" description="曲线图表" relation="cn.mars.demo.jchart.xy.dao.DatasetSyDao" sort-name="demo">
+  <method method-name="txn910101" description="查询数据列表" flow-design="调用实体类[cn.mars.demo.jchart.xy.dao.DatasetSy]的方法[]，查询数据列表" called-classes="cn.mars.demo.jchart.xy.dao.DatasetSy"/>
+  <method method-name="txn910102" description="修改数据信息" flow-design="调用实体类[cn.mars.demo.jchart.xy.dao.DatasetSy]的方法[]，修改数据信息" called-classes="cn.mars.demo.jchart.xy.dao.DatasetSy"/>
+  <method method-name="txn910103" description="增加数据信息" flow-design="调用实体类[cn.mars.demo.jchart.xy.dao.DatasetSy]的方法[]，增加数据信息" called-classes="cn.mars.demo.jchart.xy.dao.DatasetSy"/>
+  <method method-name="txn910104" description="查询数据用于修改" flow-design="调用实体类[cn.mars.demo.jchart.xy.dao.DatasetSy]的方法[]，查询数据用于修改" called-classes="cn.mars.demo.jchart.xy.dao.DatasetSy"/>
+  <method method-name="txn910105" description="删除数据信息" flow-design="调用实体类[cn.mars.demo.jchart.xy.dao.DatasetSy]的方法[]，删除数据信息" called-classes="cn.mars.demo.jchart.xy.dao.DatasetSy"/>
+</clazz>
+<clazz class-name="cn.mars.demo.pm.txn.TxnProjMember" description="项目组成员管理" relation="cn.mars.demo.pm.dao.ProjMemberDao" sort-name="demo">
+  <method method-name="txn933001" description="查询成员列表" flow-design="调用实体类[cn.mars.demo.pm.dao.ProjMember]的方法[]，查询成员列表" called-classes="cn.mars.demo.pm.dao.ProjMember"/>
+  <method method-name="txn933002" description="修改成员信息" flow-design="调用实体类[cn.mars.demo.pm.dao.ProjMember]的方法[]，修改成员信息" called-classes="cn.mars.demo.pm.dao.ProjMember"/>
+  <method method-name="txn933003" description="增加成员信息" flow-design="调用实体类[cn.mars.demo.pm.dao.ProjMember]的方法[]，增加成员信息" called-classes="cn.mars.demo.pm.dao.ProjMember"/>
+  <method method-name="txn933004" description="查询成员用于修改" flow-design="调用实体类[cn.mars.demo.pm.dao.ProjMember]的方法[]，查询成员用于修改" called-classes="cn.mars.demo.pm.dao.ProjMember"/>
+  <method method-name="txn933005" description="删除成员信息" flow-design="调用实体类[cn.mars.demo.pm.dao.ProjMember]的方法[]，删除成员信息" called-classes="cn.mars.demo.pm.dao.ProjMember"/>
+  <method method-name="txn933006" description="成员的记录信息" flow-design="调用实体类[cn.mars.demo.pm.dao.ProjMember]的方法[]，成员的记录信息" called-classes="cn.mars.demo.pm.dao.ProjMember"/>
+</clazz>
+<clazz class-name="cn.mars.demo.txn.TxnWbook" description="图书复核管理" relation="cn.mars.demo.dao.WbookDao" sort-name="demo">
+  <method method-name="txn901101" description="复核：图书列表查询" flow-design="调用实体类[cn.mars.demo.dao.Wbook]的方法[]，复核：图书列表查询" called-classes="cn.mars.demo.dao.Wbook"/>
+  <method method-name="txn901102" description="修改图书信息" flow-design="调用实体类[cn.mars.demo.dao.Wbook]的方法[]，修改图书信息" called-classes="cn.mars.demo.dao.Wbook"/>
+  <method method-name="txn901103" description="复核：增加图书信息" flow-design="调用实体类[cn.mars.demo.dao.Wbook]的方法[]，复核：增加图书信息" called-classes="cn.mars.demo.dao.Wbook"/>
+  <method method-name="txn901104" description="查询图书信息用于修改" flow-design="调用实体类[cn.mars.demo.dao.Wbook]的方法[]，查询图书信息用于修改" called-classes="cn.mars.demo.dao.Wbook"/>
+  <method method-name="txn901105" description="复核：删除图书信息" flow-design="调用实体类[cn.mars.demo.dao.Wbook]的方法[]，复核：删除图书信息" called-classes="cn.mars.demo.dao.Wbook"/>
+  <method method-name="txn901106" description="复核：修改图书状态" flow-design="调用实体类[cn.mars.demo.dao.Wbook]的方法[]，复核：修改图书状态" called-classes="cn.mars.demo.dao.Wbook"/>
+</clazz>
+<clazz class-name="cn.mars.app.browse.txn.TxnBrowseConfig" description="浏览框查询配置" relation="cn.mars.app.browse.dao.BrowseConfigDao" sort-name="module">
+  <method method-name="txn980711" description="查询浏览框列表" flow-design="调用实体类[cn.mars.app.browse.dao.BrowseConfig]的方法[]，查询浏览框列表" called-classes="cn.mars.app.browse.dao.BrowseConfig"/>
+  <method method-name="txn980712" description="修改浏览框配置信息" flow-design="调用实体类[cn.mars.app.browse.dao.BrowseConfig]的方法[]，修改浏览框配置信息" called-classes="cn.mars.app.browse.dao.BrowseConfig"/>
+  <method method-name="txn980713" description="增加浏览框配置信息" flow-design="调用实体类[cn.mars.app.browse.dao.BrowseConfig]的方法[]，增加浏览框配置信息" called-classes="cn.mars.app.browse.dao.BrowseConfig"/>
+  <method method-name="txn980714" description="查询浏览框配置用于修改" flow-design="调用实体类[cn.mars.app.browse.dao.BrowseConfig]的方法[]，查询浏览框配置用于修改" called-classes="cn.mars.app.browse.dao.BrowseConfig"/>
+  <method method-name="txn980715" description="删除浏览框配置信息" flow-design="调用实体类[cn.mars.app.browse.dao.BrowseConfig]的方法[]，删除浏览框配置信息" called-classes="cn.mars.app.browse.dao.BrowseConfig"/>
+</clazz>
+<clazz class-name="cn.mars.demo.person.txn.TxnDPersonEducation" description="人员信息维护" relation="cn.mars.demo.person.dao.DPersonEducationDao" sort-name="demo">
+  <method method-name="txn200121" description="查询学历列表" flow-design="调用实体类[cn.mars.demo.person.dao.DPersonEducation]的方法[]，查询学历列表" called-classes="cn.mars.demo.person.dao.DPersonEducation"/>
+  <method method-name="txn200122" description="修改学历信息" flow-design="调用实体类[cn.mars.demo.person.dao.DPersonEducation]的方法[]，修改学历信息" called-classes="cn.mars.demo.person.dao.DPersonEducation"/>
+  <method method-name="txn200123" description="增加学历信息" flow-design="调用实体类[cn.mars.demo.person.dao.DPersonEducation]的方法[]，增加学历信息" called-classes="cn.mars.demo.person.dao.DPersonEducation"/>
+  <method method-name="txn200124" description="查询学历用于修改" flow-design="调用实体类[cn.mars.demo.person.dao.DPersonEducation]的方法[]，查询学历用于修改" called-classes="cn.mars.demo.person.dao.DPersonEducation"/>
+  <method method-name="txn200125" description="删除学历信息" flow-design="调用实体类[cn.mars.demo.person.dao.DPersonEducation]的方法[]，删除学历信息" called-classes="cn.mars.demo.person.dao.DPersonEducation"/>
+</clazz>
+<clazz class-name="cn.mars.demo.erp.txn.TxnDemoCustomer" description="客户信息管理" relation="cn.mars.demo.erp.dao.DemoCustomerDao" sort-name="demo">
+  <method method-name="txn800201" description="查询客户资料列表" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoCustomer]的方法[]，查询客户资料列表" called-classes="cn.mars.demo.erp.dao.DemoCustomer"/>
+  <method method-name="txn800202" description="修改客户资料信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoCustomer]的方法[]，修改客户资料信息" called-classes="cn.mars.demo.erp.dao.DemoCustomer"/>
+  <method method-name="txn800203" description="增加客户资料信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoCustomer]的方法[]，增加客户资料信息" called-classes="cn.mars.demo.erp.dao.DemoCustomer"/>
+  <method method-name="txn800204" description="查询客户资料用于修改" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoCustomer]的方法[]，查询客户资料用于修改" called-classes="cn.mars.demo.erp.dao.DemoCustomer"/>
+  <method method-name="txn800205" description="删除客户资料信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoCustomer]的方法[]，删除客户资料信息" called-classes="cn.mars.demo.erp.dao.DemoCustomer"/>
+  <method method-name="txn800206" description="客户资料的记录信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoCustomer]的方法[]，客户资料的记录信息" called-classes="cn.mars.demo.erp.dao.DemoCustomer"/>
+  <method method-name="txn800207" description="客户资料的修改日志" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoCustomer]的方法[]，客户资料的修改日志" called-classes="cn.mars.demo.erp.dao.DemoCustomer"/>
+</clazz>
+<clazz class-name="cn.mars.app.mail.txn.TxnMailsort" description="邮件分类信息" relation="cn.mars.app.mail.dao.MailsortDao" sort-name="module">
+  <method method-name="txn981171" description="查询邮件分类列表" flow-design="调用实体类[cn.mars.app.mail.dao.Mailsort]的方法[]，查询邮件分类列表" called-classes="cn.mars.app.mail.dao.Mailsort"/>
+  <method method-name="txn981172" description="修改邮件分类资料" flow-design="调用实体类[cn.mars.app.mail.dao.Mailsort]的方法[]，修改邮件分类资料" called-classes="cn.mars.app.mail.dao.Mailsort"/>
+  <method method-name="txn981173" description="增加邮件分类资料" flow-design="调用实体类[cn.mars.app.mail.dao.Mailsort]的方法[]，增加邮件分类资料" called-classes="cn.mars.app.mail.dao.Mailsort"/>
+  <method method-name="txn981174" description="查询邮件分类用于修改" flow-design="调用实体类[cn.mars.app.mail.dao.Mailsort]的方法[]，查询邮件分类用于修改" called-classes="cn.mars.app.mail.dao.Mailsort"/>
+  <method method-name="txn981175" description="删除邮件分类信息" flow-design="调用实体类[cn.mars.app.mail.dao.Mailsort]的方法[]，删除邮件分类信息" called-classes="cn.mars.app.mail.dao.Mailsort"/>
+</clazz>
+<clazz class-name="cn.mars.demo.school.student.txn.TxnDStudent" description="班级信息查询" relation="cn.mars.demo.school.student.dao.DStudentDao" sort-name="demo">
+  <method method-name="txn500031" description="查询学生列表" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，查询学生列表" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+  <method method-name="txn500032" description="修改学生信息" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，修改学生信息" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+  <method method-name="txn500033" description="增加学生信息" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，增加学生信息" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+  <method method-name="txn500034" description="查询学生用于修改" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，查询学生用于修改" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+  <method method-name="txn500035" description="删除学生信息" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，删除学生信息" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+  <method method-name="txn500036" description="学生的记录信息" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，学生的记录信息" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+  <method method-name="txn500037" description="学生的修改日志" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，学生的修改日志" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+  <method method-name="txn50003b" description="修改记录的状态" flow-design="调用实体类[cn.mars.demo.school.student.dao.DStudent]的方法[]，修改记录的状态" called-classes="cn.mars.demo.school.student.dao.DStudent"/>
+</clazz>
+<clazz class-name="cn.mars.app.user.user.txn.TxnUsertable" description="机构目录管理" relation="cn.mars.app.user.user.dao.UsertableDao" sort-name="module">
+  <method method-name="txn980511" description="查询用户列表" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，查询用户列表" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn980512" description="修改用户信息" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，修改用户信息" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn980513" description="增加用户信息" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，增加用户信息" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn980514" description="查询用户用于修改" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，查询用户用于修改" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn980515" description="删除用户信息" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，删除用户信息" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051b" description="修改记录的状态" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，修改记录的状态" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051c" description="双人重置用户密码" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，双人重置用户密码" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051d" description="单人重置用户密码" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，单人重置用户密码" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051r" description="修改用户密码" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，修改用户密码" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051s" description="论坛密码修改" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，论坛密码修改" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051t" description="邮件密码修改" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，邮件密码修改" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051u" description="页面布局设置" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，页面布局设置" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051v" description="用户转授权" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，用户转授权" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+  <method method-name="txn98051w" description="查看我的基本信息" flow-design="调用实体类[cn.mars.app.user.user.dao.Usertable]的方法[]，查看我的基本信息" called-classes="cn.mars.app.user.user.dao.Usertable"/>
+</clazz>
+<clazz class-name="cn.mars.report.jasperreport.txn.JasperReportService" description="JASPERREPORT报表服务器" relation="cn.mars.report.jasperreport.dao.JasperReportServiceDao" sort-name="module">
+  <method method-name="createEmbedReport" description="生成JasperReport报表" flow-design="调用实体类[cn.mars.report.jasperreport.dao.JasperReportService]的方法[]，生成JasperReport报表" called-classes="cn.mars.report.jasperreport.dao.JasperReportService"/>
+  <method method-name="createReport" description="生成JasperReport报表" flow-design="调用实体类[cn.mars.report.jasperreport.dao.JasperReportService]的方法[]，生成JasperReport报表" called-classes="cn.mars.report.jasperreport.dao.JasperReportService"/>
+</clazz>
+<clazz class-name="cn.mars.app.priv.txn.TxnOperrole" description="业务角色维护" relation="cn.mars.app.priv.dao.OperroleDao" sort-name="module">
+  <method method-name="txn980321" description="查询业务角色列表" flow-design="调用实体类[cn.mars.app.priv.dao.Operrole]的方法[]，查询业务角色列表" called-classes="cn.mars.app.priv.dao.Operrole"/>
+  <method method-name="txn980322" description="修改业务角色资料" flow-design="调用实体类[cn.mars.app.priv.dao.Operrole]的方法[]，修改业务角色资料" called-classes="cn.mars.app.priv.dao.Operrole"/>
+  <method method-name="txn980323" description="增加业务角色资料" flow-design="调用实体类[cn.mars.app.priv.dao.Operrole]的方法[]，增加业务角色资料" called-classes="cn.mars.app.priv.dao.Operrole"/>
+  <method method-name="txn980324" description="查询业务角色用于修改" flow-design="调用实体类[cn.mars.app.priv.dao.Operrole]的方法[]，查询业务角色用于修改" called-classes="cn.mars.app.priv.dao.Operrole"/>
+  <method method-name="txn980325" description="删除业务角色信息" flow-design="调用实体类[cn.mars.app.priv.dao.Operrole]的方法[]，删除业务角色信息" called-classes="cn.mars.app.priv.dao.Operrole"/>
+  <method method-name="txn980326" description="设置角色的状态" flow-design="调用实体类[cn.mars.app.priv.dao.Operrole]的方法[]，设置角色的状态" called-classes="cn.mars.app.priv.dao.Operrole"/>
+  <method method-name="txn980327" description="设置角色的权限信息" flow-design="调用实体类[cn.mars.app.priv.dao.Operrole]的方法[]，设置角色的权限信息" called-classes="cn.mars.app.priv.dao.Operrole"/>
+</clazz>
+<clazz class-name="cn.mars.test.TestService" description="个人资料登记" relation="cn.mars.test.TestServiceDao">
+  <method method-name="txnService" description="test" flow-design="调用实体类[cn.mars.test.TestService]的方法[]，test" called-classes="cn.mars.test.TestService"/>
+</clazz>
+<clazz class-name="cn.mars.app.rule.txn.TxnParamDef" description="规则参数类型" relation="cn.mars.app.rule.dao.ParamDefDao" sort-name="module">
+  <method method-name="txn981302" description="修改参数类型信息" flow-design="调用实体类[cn.mars.app.rule.dao.ParamDef]的方法[]，修改参数类型信息" called-classes="cn.mars.app.rule.dao.ParamDef"/>
+  <method method-name="txn981303" description="增加参数类型信息" flow-design="调用实体类[cn.mars.app.rule.dao.ParamDef]的方法[]，增加参数类型信息" called-classes="cn.mars.app.rule.dao.ParamDef"/>
+  <method method-name="txn981304" description="查询参数类型用于修改" flow-design="调用实体类[cn.mars.app.rule.dao.ParamDef]的方法[]，查询参数类型用于修改" called-classes="cn.mars.app.rule.dao.ParamDef"/>
+  <method method-name="txn981305" description="删除参数类型信息" flow-design="调用实体类[cn.mars.app.rule.dao.ParamDef]的方法[]，删除参数类型信息" called-classes="cn.mars.app.rule.dao.ParamDef"/>
+  <method method-name="txn981308" description="参数类型的目录结构" flow-design="调用实体类[cn.mars.app.rule.dao.ParamDef]的方法[]，参数类型的目录结构" called-classes="cn.mars.app.rule.dao.ParamDef"/>
+  <method method-name="txn98130R" description="参数类型的目录结构" flow-design="调用实体类[cn.mars.app.rule.dao.ParamDef]的方法[]，参数类型的目录结构" called-classes="cn.mars.app.rule.dao.ParamDef"/>
+  <method method-name="txn98130S" description="生成获取参数的类" flow-design="调用实体类[cn.mars.app.rule.dao.ParamDef]的方法[]，生成获取参数的类" called-classes="cn.mars.app.rule.dao.ParamDef"/>
+</clazz>
+<clazz class-name="cn.mars.app.wf.txn.TxnFlowEngine" description="复核流程" relation="cn.mars.app.wf.dao.FlowEngineDao" sort-name="module">
+  <method method-name="flowBack" description="回退任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，回退任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowInit" description="生成新的任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，生成新的任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowPass" description="处理任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，处理任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowReback" description="重新回退任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，重新回退任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowRefuse" description="终止任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，终止任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowReinit" description="重新初始化任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，重新初始化任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowRepass" description="重新处理任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，重新处理任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowRerefuse" description="重新终止任务" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，重新终止任务" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+  <method method-name="flowUndo" description="撤销动作" flow-design="调用实体类[cn.mars.app.wf.dao.FlowEngine]的方法[]，撤销动作" called-classes="cn.mars.app.wf.dao.FlowEngine"/>
+</clazz>
+<clazz class-name="cn.mars.app.mail.txn.TxnMailbox" description="电子邮件管理" relation="cn.mars.app.mail.dao.MailboxDao" sort-name="module">
+  <method method-name="resendMail" description="再次发送电子邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，再次发送电子邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981131" description="查询发送的电子邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，查询发送的电子邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981133" description="发送电子邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，发送电子邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981134" description="查看电子邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，查看电子邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981135" description="删除电子邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，删除电子邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981141" description="查询已经删除的电子邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，查询已经删除的电子邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981142" description="设置电子邮件的标志" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，设置电子邮件的标志" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981143" description="恢复电子邮件的删除标志" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，恢复电子邮件的删除标志" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981151" description="查询接收的电子邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，查询接收的电子邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981152" description="接收邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，接收邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981153" description="邮件分类" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，邮件分类" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981154" description="下载邮件的附件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，下载邮件的附件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981162" description="修改电子邮件服务器配置信息" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，修改电子邮件服务器配置信息" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txn981164" description="查询电子邮件服务器配置信息" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，查询电子邮件服务器配置信息" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+  <method method-name="txnAutoTask" description="后台自动发送邮件" flow-design="调用实体类[cn.mars.app.mail.dao.Mailbox]的方法[]，后台自动发送邮件" called-classes="cn.mars.app.mail.dao.Mailbox"/>
+</clazz>
+<clazz class-name="cn.mars.spark.txn.TxnTest" description="个人资料登记" relation="cn.mars.spark.dao.TestDao">
+  <method method-name="txn915001" description="test" flow-design="调用实体类[cn.mars.spark.dao.Test]的方法[]，test" called-classes="cn.mars.spark.dao.Test"/>
+</clazz>
+<clazz class-name="cn.mars.app.appslog.txn.TxnAppsLog" description="系统日志查询" relation="cn.mars.app.appslog.dao.AppsLogDao" sort-name="module">
+  <method method-name="txn991231" description="查询日志列表" flow-design="调用实体类[cn.mars.app.appslog.dao.AppsLog]的方法[]，查询日志列表" called-classes="cn.mars.app.appslog.dao.AppsLog"/>
+  <method method-name="txn991232" description="错误日志列表" flow-design="调用实体类[cn.mars.app.appslog.dao.AppsLog]的方法[]，错误日志列表" called-classes="cn.mars.app.appslog.dao.AppsLog"/>
+  <method method-name="txn991234" description="查询日志用于修改" flow-design="调用实体类[cn.mars.app.appslog.dao.AppsLog]的方法[]，查询日志用于修改" called-classes="cn.mars.app.appslog.dao.AppsLog"/>
+  <method method-name="txn991235" description="删除日志信息" flow-design="调用实体类[cn.mars.app.appslog.dao.AppsLog]的方法[]，删除日志信息" called-classes="cn.mars.app.appslog.dao.AppsLog"/>
+</clazz>
+<clazz class-name="cn.mars.demo.oa.TxnDComputer1" description="计算机管理" relation="cn.mars.demo.oa.DComputer1Dao" sort-name="demo">
+  <method method-name="txn932011" description="查询计算机列表" flow-design="调用实体类[cn.mars.demo.oa.DComputer1]的方法[]，查询计算机列表" called-classes="cn.mars.demo.oa.DComputer1"/>
+</clazz>
+<clazz class-name="cn.mars.demo.erp.txn.TxnDemoOrderitem" description="订单管理" relation="cn.mars.demo.erp.dao.DemoOrderitemDao" sort-name="demo">
+  <method method-name="txn932031" description="查询订单项列表" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderitem]的方法[]，查询订单项列表" called-classes="cn.mars.demo.erp.dao.DemoOrderitem"/>
+  <method method-name="txn932032" description="修改订单项信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderitem]的方法[]，修改订单项信息" called-classes="cn.mars.demo.erp.dao.DemoOrderitem"/>
+  <method method-name="txn932033" description="增加订单项信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderitem]的方法[]，增加订单项信息" called-classes="cn.mars.demo.erp.dao.DemoOrderitem"/>
+  <method method-name="txn932034" description="查询订单项用于修改" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderitem]的方法[]，查询订单项用于修改" called-classes="cn.mars.demo.erp.dao.DemoOrderitem"/>
+  <method method-name="txn932035" description="删除订单项信息" flow-design="调用实体类[cn.mars.demo.erp.dao.DemoOrderitem]的方法[]，删除订单项信息" called-classes="cn.mars.demo.erp.dao.DemoOrderitem"/>
+</clazz>
+<clazz class-name="cn.mars.app.codemap.txn.TxnCodeData" description="业务代码表维护" relation="cn.mars.app.codemap.dao.CodeDataDao" sort-name="module">
+  <method method-name="txn980011" description="获取代码信息的列表" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，获取代码信息的列表" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+  <method method-name="txn980012" description="增加代码信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，增加代码信息" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+  <method method-name="txn980013" description="查询一个代码的信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，查询一个代码的信息" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+  <method method-name="txn980014" description="禁止代码信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，禁止代码信息" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+  <method method-name="txn980015" description="修改代码信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，修改代码信息" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+  <method method-name="txn980016" description="删除代码" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，删除代码" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+  <method method-name="txn980017" description="批量增加代码信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，批量增加代码信息" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+  <method method-name="txn980018" description="获取代码信息的列表" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeData]的方法[]，获取代码信息的列表" called-classes="cn.mars.app.codemap.dao.CodeData"/>
+</clazz>
+<clazz class-name="cn.mars.app.wf.txn.TxnFlowInfo" description="复核流程" relation="cn.mars.app.wf.dao.FlowInfoDao" sort-name="module">
+  <method method-name="flowGetlog" description="查看任务的处理日志" flow-design="调用实体类[cn.mars.app.wf.dao.FlowInfo]的方法[]，查看任务的处理日志" called-classes="cn.mars.app.wf.dao.FlowInfo"/>
+</clazz>
+<clazz class-name="cn.mars.app.bizconfig.plugin.TxnBizConfigService" description="业务配置" relation="cn.mars.app.bizconfig.plugin.BizConfigServiceDao" sort-name="module">
+  <method method-name="txnFFFF99" description="取序列号" flow-design="调用实体类[cn.mars.app.bizconfig.plugin.BizConfigService]的方法[]，取序列号" called-classes="cn.mars.app.bizconfig.plugin.BizConfigService"/>
+</clazz>
+<clazz class-name="cn.mars.test.file.TxnTestFileService" description="文件上下传" relation="cn.mars.test.file.TestFileServiceDao" sort-name="demo">
+  <method method-name="testFormUpload" description="表单文件上传" flow-design="调用实体类[cn.mars.test.file.TestFileService]的方法[]，表单文件上传" called-classes="cn.mars.test.file.TestFileService"/>
+  <method method-name="testUploadFile" description="单个文件上传" flow-design="调用实体类[cn.mars.test.file.TestFileService]的方法[]，单个文件上传" called-classes="cn.mars.test.file.TestFileService"/>
+  <method method-name="testUploadFiles" description="批量文件上传" flow-design="调用实体类[cn.mars.test.file.TestFileService]的方法[]，批量文件上传" called-classes="cn.mars.test.file.TestFileService"/>
+</clazz>
+<clazz class-name="cn.mars.app.bizconfig.txn.TxnBizConfigDef" description="业务配置定义" relation="cn.mars.app.bizconfig.dao.BizConfigDefDao" sort-name="module">
+  <method method-name="txn981401" description="查询业务配置定义列表" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigDef]的方法[]，查询业务配置定义列表" called-classes="cn.mars.app.bizconfig.dao.BizConfigDef"/>
+  <method method-name="txn981402" description="修改业务配置定义信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigDef]的方法[]，修改业务配置定义信息" called-classes="cn.mars.app.bizconfig.dao.BizConfigDef"/>
+  <method method-name="txn981403" description="增加业务配置定义信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigDef]的方法[]，增加业务配置定义信息" called-classes="cn.mars.app.bizconfig.dao.BizConfigDef"/>
+  <method method-name="txn981404" description="查询业务配置定义用于修改" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigDef]的方法[]，查询业务配置定义用于修改" called-classes="cn.mars.app.bizconfig.dao.BizConfigDef"/>
+  <method method-name="txn981405" description="删除业务配置定义信息" flow-design="调用实体类[cn.mars.app.bizconfig.dao.BizConfigDef]的方法[]，删除业务配置定义信息" called-classes="cn.mars.app.bizconfig.dao.BizConfigDef"/>
+</clazz>
+<clazz class-name="cn.mars.app.holiday.txn.TxnHoliday" description="节假日维护" relation="cn.mars.app.holiday.dao.HolidayDao" sort-name="module">
+  <method method-name="txn980041" description="查询节假日信息" flow-design="调用实体类[cn.mars.app.holiday.dao.Holiday]的方法[]，查询节假日信息" called-classes="cn.mars.app.holiday.dao.Holiday"/>
+  <method method-name="txn980042" description="保存节假日信息" flow-design="调用实体类[cn.mars.app.holiday.dao.Holiday]的方法[]，保存节假日信息" called-classes="cn.mars.app.holiday.dao.Holiday"/>
+</clazz>
+<clazz class-name="cn.mars.app.browse.txn.TxnBrowseQuery" description="浏览框查询配置" relation="cn.mars.app.browse.dao.BrowseQueryDao" sort-name="module">
+  <method method-name="txn980791" description="浏览框内容查询－生成页面" flow-design="调用实体类[cn.mars.app.browse.dao.BrowseQuery]的方法[]，浏览框内容查询－生成页面" called-classes="cn.mars.app.browse.dao.BrowseQuery"/>
+  <method method-name="txn980792" description="浏览框内容查询－查询结果" flow-design="调用实体类[cn.mars.app.browse.dao.BrowseQuery]的方法[]，浏览框内容查询－查询结果" called-classes="cn.mars.app.browse.dao.BrowseQuery"/>
+</clazz>
+<clazz class-name="cn.mars.app.license.txn.TxnLicense" description="鍗忚淇℃伅缁存姢" relation="cn.mars.app.license.dao.LicenseDao" sort-name="module">
+  <method method-name="createLicense" description="鐢熸垚鍗忚" flow-design="调用实体类[cn.mars.app.license.dao.License]的方法[]，鐢熸垚鍗忚" called-classes="cn.mars.app.license.dao.License"/>
+  <method method-name="recreateLicense" description="閲嶆柊鐢熸垚鍗忚" flow-design="调用实体类[cn.mars.app.license.dao.License]的方法[]，閲嶆柊鐢熸垚鍗忚" called-classes="cn.mars.app.license.dao.License"/>
+  <method method-name="txn901021" description="鍗忚鍒楄〃鏌ヨ" flow-design="调用实体类[cn.mars.app.license.dao.License]的方法[]，鍗忚鍒楄〃鏌ヨ" called-classes="cn.mars.app.license.dao.License"/>
+  <method method-name="txn901024" description="鏌ョ湅鍗忚鍐呭" flow-design="调用实体类[cn.mars.app.license.dao.License]的方法[]，鏌ョ湅鍗忚鍐呭" called-classes="cn.mars.app.license.dao.License"/>
+  <method method-name="txn901025" description="鍒犻櫎鍗忚鏂囦欢" flow-design="调用实体类[cn.mars.app.license.dao.License]的方法[]，鍒犻櫎鍗忚鏂囦欢" called-classes="cn.mars.app.license.dao.License"/>
+  <method method-name="uploadLicense" description="涓婁紶鍗忚鏂囦欢" flow-design="调用实体类[cn.mars.app.license.dao.License]的方法[]，涓婁紶鍗忚鏂囦欢" called-classes="cn.mars.app.license.dao.License"/>
+</clazz>
+<clazz class-name="cn.mars.test.DownloadExcel" description="Excel测试" relation="cn.mars.test.DownloadExcelDao" sort-name="console">
+  <method method-name="txnService" description="上传Excel文件" flow-design="调用实体类[cn.mars.test.DownloadExcel]的方法[select unit list1]，上传Excel文件" called-classes="cn.mars.test.DownloadExcel"/>
+</clazz>
+<clazz class-name="cn.mars.app.words.TxnCommonWords" description="常用词维护" relation="cn.mars.app.words.CommonWordsDao" sort-name="module">
+  <method method-name="txn980021" description="查询常用词列表" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，查询常用词列表" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn980022" description="修改常用词资料" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，修改常用词资料" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn980023" description="增加常用词资料" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，增加常用词资料" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn980024" description="查询常用词用于修改" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，查询常用词用于修改" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn980025" description="删除常用词信息" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，删除常用词信息" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn98002h" description="匹配常用词" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，匹配常用词" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn980031" description="查询常用词类型列表" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，查询常用词类型列表" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn980033" description="增加常用词类型" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，增加常用词类型" called-classes="cn.mars.app.words.CommonWords"/>
+  <method method-name="txn980035" description="删除常用词类型" flow-design="调用实体类[cn.mars.app.words.CommonWords]的方法[]，删除常用词类型" called-classes="cn.mars.app.words.CommonWords"/>
+</clazz>
+<clazz class-name="cn.mars.app.login.LoginService" description="个人资料登记" relation="cn.mars.app.login.LoginServiceDao">
+  <method method-name="login" description="操作员签到" flow-design="调用实体类[cn.mars.app.login.LoginService]的方法[]，操作员签到" called-classes="cn.mars.app.login.LoginService"/>
+</clazz>
+<clazz class-name="cn.mars.demo.widget.TxnWidgetTest" description="表单控件演示" relation="cn.mars.demo.widget.WidgetTestDao" sort-name="demo">
+  <method method-name="txn937002" description="动态表单域演示" flow-design="调用实体类[cn.mars.demo.widget.WidgetTest]的方法[]，动态表单域演示" called-classes="cn.mars.demo.widget.WidgetTest"/>
+  <method method-name="txn937012" description="动态GRID演示" flow-design="调用实体类[cn.mars.demo.widget.WidgetTest]的方法[]，动态GRID演示" called-classes="cn.mars.demo.widget.WidgetTest"/>
+</clazz>
+<clazz class-name="cn.mars.demo.corp.txn.TxnDCorp" description="延迟加载树" relation="cn.mars.demo.corp.dao.DCorpDao" sort-name="demo">
+  <method method-name="txn931041" description="查询公司列表" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，查询公司列表" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+  <method method-name="txn931042" description="修改公司信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，修改公司信息" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+  <method method-name="txn931043" description="增加公司信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，增加公司信息" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+  <method method-name="txn931044" description="查询公司用于修改" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，查询公司用于修改" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+  <method method-name="txn931045" description="删除公司信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，删除公司信息" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+  <method method-name="txn931048" description="公司的目录结构，用于生成树" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，公司的目录结构，用于生成树" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+  <method method-name="txn931049" description="修改公司的目录结构，用于节点的拖动" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，修改公司的目录结构，用于节点的拖动" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+  <method method-name="txn93104c" description="修改公司的标题，用于树节点的标题编辑" flow-design="调用实体类[cn.mars.demo.corp.dao.DCorp]的方法[]，修改公司的标题，用于树节点的标题编辑" called-classes="cn.mars.demo.corp.dao.DCorp"/>
+</clazz>
+<clazz class-name="cn.mars.app.rule.txn.TxnParamValue" description="规则参数维护" relation="cn.mars.app.rule.dao.ParamValueDao" sort-name="module">
+  <method method-name="txn981311" description="查询参数列表" flow-design="调用实体类[cn.mars.app.rule.dao.ParamValue]的方法[]，查询参数列表" called-classes="cn.mars.app.rule.dao.ParamValue"/>
+  <method method-name="txn981312" description="修改参数" flow-design="调用实体类[cn.mars.app.rule.dao.ParamValue]的方法[]，修改参数" called-classes="cn.mars.app.rule.dao.ParamValue"/>
+  <method method-name="txn981313" description="增加参数" flow-design="调用实体类[cn.mars.app.rule.dao.ParamValue]的方法[]，增加参数" called-classes="cn.mars.app.rule.dao.ParamValue"/>
+  <method method-name="txn981314" description="查询参数" flow-design="调用实体类[cn.mars.app.rule.dao.ParamValue]的方法[]，查询参数" called-classes="cn.mars.app.rule.dao.ParamValue"/>
+  <method method-name="txn981315" description="删除参数" flow-design="调用实体类[cn.mars.app.rule.dao.ParamValue]的方法[]，删除参数" called-classes="cn.mars.app.rule.dao.ParamValue"/>
+  <method method-name="txn98131R" description="生成增加参数的表单" flow-design="调用实体类[cn.mars.app.rule.dao.ParamValue]的方法[]，生成增加参数的表单" called-classes="cn.mars.app.rule.dao.ParamValue"/>
+</clazz>
+<clazz class-name="cn.mars.app.task.txn.TxnSystemtask" description="任务表维护" relation="cn.mars.app.task.dao.SystemtaskDao" sort-name="module">
+  <method method-name="txn980161" description="查询任务列表" flow-design="调用实体类[cn.mars.app.task.dao.Systemtask]的方法[]，查询任务列表" called-classes="cn.mars.app.task.dao.Systemtask"/>
+  <method method-name="txn980162" description="修改任务资料" flow-design="调用实体类[cn.mars.app.task.dao.Systemtask]的方法[]，修改任务资料" called-classes="cn.mars.app.task.dao.Systemtask"/>
+  <method method-name="txn980163" description="增加任务资料" flow-design="调用实体类[cn.mars.app.task.dao.Systemtask]的方法[]，增加任务资料" called-classes="cn.mars.app.task.dao.Systemtask"/>
+  <method method-name="txn980164" description="查询任务用于修改" flow-design="调用实体类[cn.mars.app.task.dao.Systemtask]的方法[]，查询任务用于修改" called-classes="cn.mars.app.task.dao.Systemtask"/>
+  <method method-name="txn980165" description="删除任务信息" flow-design="调用实体类[cn.mars.app.task.dao.Systemtask]的方法[]，删除任务信息" called-classes="cn.mars.app.task.dao.Systemtask"/>
+</clazz>
+<clazz class-name="cn.mars.app.user.org.txn.TxnOrgtable" description="机构目录管理" relation="cn.mars.app.user.org.dao.OrgtableDao" sort-name="module">
+  <method method-name="txn980501" description="查询机构列表" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，查询机构列表" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn980502" description="修改机构信息" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，修改机构信息" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn980503" description="增加机构信息" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，增加机构信息" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn980504" description="查询机构用于修改" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，查询机构用于修改" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn980505" description="删除机构信息" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，删除机构信息" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn980508" description="机构的目录结构" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，机构的目录结构" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn980509" description="修改机构的目录结构" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，修改机构的目录结构" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn98050a" description="修改机构的分类代码信息" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，修改机构的分类代码信息" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn98050c" description="修改机构的名称" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，修改机构的名称" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+  <method method-name="txn98050x" description="操作员权限范围内机构的目录结构" flow-design="调用实体类[cn.mars.app.user.org.dao.Orgtable]的方法[]，操作员权限范围内机构的目录结构" called-classes="cn.mars.app.user.org.dao.Orgtable"/>
+</clazz>
+<clazz class-name="cn.mars.demo.corp.txn.TxnDStaff" description="延迟加载树" relation="cn.mars.demo.corp.dao.DStaffDao" sort-name="demo">
+  <method method-name="txn931061" description="查询员工列表" flow-design="调用实体类[cn.mars.demo.corp.dao.DStaff]的方法[]，查询员工列表" called-classes="cn.mars.demo.corp.dao.DStaff"/>
+  <method method-name="txn931062" description="修改员工信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DStaff]的方法[]，修改员工信息" called-classes="cn.mars.demo.corp.dao.DStaff"/>
+  <method method-name="txn931063" description="增加员工信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DStaff]的方法[]，增加员工信息" called-classes="cn.mars.demo.corp.dao.DStaff"/>
+  <method method-name="txn931064" description="查询员工用于修改" flow-design="调用实体类[cn.mars.demo.corp.dao.DStaff]的方法[]，查询员工用于修改" called-classes="cn.mars.demo.corp.dao.DStaff"/>
+  <method method-name="txn931065" description="删除员工信息" flow-design="调用实体类[cn.mars.demo.corp.dao.DStaff]的方法[]，删除员工信息" called-classes="cn.mars.demo.corp.dao.DStaff"/>
+</clazz>
+<clazz class-name="cn.mars.app.wf.web.FlowEngine" description="复核流程" relation="cn.mars.app.wf.web.FlowEngineDao" sort-name="module">
+  <method method-name="flowInit" description="流程初始化动作" flow-design="调用实体类[cn.mars.app.wf.web.FlowEngine]的方法[]，流程初始化动作" called-classes="cn.mars.app.wf.web.FlowEngine"/>
+  <method method-name="flowProcess" description="处理任务" flow-design="调用实体类[cn.mars.app.wf.web.FlowEngine]的方法[]，处理任务" called-classes="cn.mars.app.wf.web.FlowEngine"/>
+  <method method-name="flowRedo" description="任务重做" flow-design="调用实体类[cn.mars.app.wf.web.FlowEngine]的方法[]，任务重做" called-classes="cn.mars.app.wf.web.FlowEngine"/>
+  <method method-name="flowUndo" description="任务撤销" flow-design="调用实体类[cn.mars.app.wf.web.FlowEngine]的方法[]，任务撤销" called-classes="cn.mars.app.wf.web.FlowEngine"/>
+  <method method-name="flowViewlog" description="查看日志信息" flow-design="调用实体类[cn.mars.app.wf.web.FlowEngine]的方法[]，查看日志信息" called-classes="cn.mars.app.wf.web.FlowEngine"/>
+  <method method-name="loadTaskInfo" description="加载任务信息" flow-design="调用实体类[cn.mars.app.wf.web.FlowEngine]的方法[]，加载任务信息" called-classes="cn.mars.app.wf.web.FlowEngine"/>
+  <method method-name="reloadTaskInfo" description="加载任务信息用于重做任务" flow-design="调用实体类[cn.mars.app.wf.web.FlowEngine]的方法[]，加载任务信息用于重做任务" called-classes="cn.mars.app.wf.web.FlowEngine"/>
+</clazz>
+<clazz class-name="cn.mars.monitor.thread.QueryMonData" description="实时监控" relation="cn.mars.monitor.thread.QueryMonDataDao" sort-name="module">
+  <method method-name="txnmon001" description="监控数据入库" flow-design="调用实体类[cn.mars.monitor.thread.QueryMonData]的方法[]，监控数据入库" called-classes="cn.mars.monitor.thread.QueryMonData"/>
+  <method method-name="txnmon002" description="监控数据查询" flow-design="调用实体类[cn.mars.monitor.thread.QueryMonData]的方法[]，监控数据查询" called-classes="cn.mars.monitor.thread.QueryMonData"/>
+  <method method-name="txnmon003" description="删除监控数据" flow-design="调用实体类[cn.mars.monitor.thread.QueryMonData]的方法[]，删除监控数据" called-classes="cn.mars.monitor.thread.QueryMonData"/>
+</clazz>
+<clazz class-name="cn.mars.demo.jchart.pie.txn.TxnDatasetPie" description="Pie饼图" relation="cn.mars.demo.jchart.pie.dao.DatasetPieDao" sort-name="demo">
+  <method method-name="txn910111" description="查询数据列表" flow-design="调用实体类[cn.mars.demo.jchart.pie.dao.DatasetPie]的方法[]，查询数据列表" called-classes="cn.mars.demo.jchart.pie.dao.DatasetPie"/>
+  <method method-name="txn910112" description="修改数据信息" flow-design="调用实体类[cn.mars.demo.jchart.pie.dao.DatasetPie]的方法[]，修改数据信息" called-classes="cn.mars.demo.jchart.pie.dao.DatasetPie"/>
+  <method method-name="txn910113" description="增加数据信息" flow-design="调用实体类[cn.mars.demo.jchart.pie.dao.DatasetPie]的方法[]，增加数据信息" called-classes="cn.mars.demo.jchart.pie.dao.DatasetPie"/>
+  <method method-name="txn910114" description="查询数据用于修改" flow-design="调用实体类[cn.mars.demo.jchart.pie.dao.DatasetPie]的方法[]，查询数据用于修改" called-classes="cn.mars.demo.jchart.pie.dao.DatasetPie"/>
+  <method method-name="txn910115" description="删除数据信息" flow-design="调用实体类[cn.mars.demo.jchart.pie.dao.DatasetPie]的方法[]，删除数据信息" called-classes="cn.mars.demo.jchart.pie.dao.DatasetPie"/>
+</clazz>
+<clazz class-name="cn.mars.app.wf.txn.TxnFlowstep" description="复核流程的动作配置" relation="cn.mars.app.wf.dao.FlowstepDao" sort-name="module">
+  <method method-name="txn980411" description="查询流程动作列表" flow-design="调用实体类[cn.mars.app.wf.dao.Flowstep]的方法[]，查询流程动作列表" called-classes="cn.mars.app.wf.dao.Flowstep"/>
+  <method method-name="txn980412" description="修改流程的处理步骤" flow-design="调用实体类[cn.mars.app.wf.dao.Flowstep]的方法[]，修改流程的处理步骤" called-classes="cn.mars.app.wf.dao.Flowstep"/>
+  <method method-name="txn980413" description="增加流程的处理步骤" flow-design="调用实体类[cn.mars.app.wf.dao.Flowstep]的方法[]，增加流程的处理步骤" called-classes="cn.mars.app.wf.dao.Flowstep"/>
+  <method method-name="txn980414" description="查询流程动作用于修改" flow-design="调用实体类[cn.mars.app.wf.dao.Flowstep]的方法[]，查询流程动作用于修改" called-classes="cn.mars.app.wf.dao.Flowstep"/>
+  <method method-name="txn980415" description="删除流程的的处理步骤" flow-design="调用实体类[cn.mars.app.wf.dao.Flowstep]的方法[]，删除流程的的处理步骤" called-classes="cn.mars.app.wf.dao.Flowstep"/>
+</clazz>
+<clazz class-name="cn.mars.app.codemap.txn.TxnCodeIndex" description="业务代码表维护" relation="cn.mars.app.codemap.dao.CodeIndexDao" sort-name="module">
+  <method method-name="txn980001" description="代码索引列表查询" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeIndex]的方法[]，代码索引列表查询" called-classes="cn.mars.app.codemap.dao.CodeIndex"/>
+  <method method-name="txn980002" description="增加代码索引信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeIndex]的方法[]，增加代码索引信息" called-classes="cn.mars.app.codemap.dao.CodeIndex"/>
+  <method method-name="txn980003" description="查询代码索引信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeIndex]的方法[]，查询代码索引信息" called-classes="cn.mars.app.codemap.dao.CodeIndex"/>
+  <method method-name="txn980004" description="禁止代码索引信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeIndex]的方法[]，禁止代码索引信息" called-classes="cn.mars.app.codemap.dao.CodeIndex"/>
+  <method method-name="txn980005" description="修改代码索引信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeIndex]的方法[]，修改代码索引信息" called-classes="cn.mars.app.codemap.dao.CodeIndex"/>
+  <method method-name="txn980006" description="导出代码信息" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeIndex]的方法[]，导出代码信息" called-classes="cn.mars.app.codemap.dao.CodeIndex"/>
+  <method method-name="txn980008" description="删除代码集" flow-design="调用实体类[cn.mars.app.codemap.dao.CodeIndex]的方法[]，删除代码集" called-classes="cn.mars.app.codemap.dao.CodeIndex"/>
+</clazz>
+<clazz class-name="cn.mars.app.sequence.txn.TxnBizcodedefine" description="业务编号维护" relation="cn.mars.app.sequence.dao.BizcodedefineDao" sort-name="module">
+  <method method-name="txn980121" description="查询业务序号列表" flow-design="调用实体类[cn.mars.app.sequence.dao.Bizcodedefine]的方法[]，查询业务序号列表" called-classes="cn.mars.app.sequence.dao.Bizcodedefine"/>
+  <method method-name="txn980122" description="修改业务序号资料" flow-design="调用实体类[cn.mars.app.sequence.dao.Bizcodedefine]的方法[]，修改业务序号资料" called-classes="cn.mars.app.sequence.dao.Bizcodedefine"/>
+  <method method-name="txn980123" description="增加业务序号资料" flow-design="调用实体类[cn.mars.app.sequence.dao.Bizcodedefine]的方法[]，增加业务序号资料" called-classes="cn.mars.app.sequence.dao.Bizcodedefine"/>
+  <method method-name="txn980124" description="查询业务序号用于修改" flow-design="调用实体类[cn.mars.app.sequence.dao.Bizcodedefine]的方法[]，查询业务序号用于修改" called-classes="cn.mars.app.sequence.dao.Bizcodedefine"/>
+  <method method-name="txn980125" description="删除业务序号信息" flow-design="调用实体类[cn.mars.app.sequence.dao.Bizcodedefine]的方法[]，删除业务序号信息" called-classes="cn.mars.app.sequence.dao.Bizcodedefine"/>
+</clazz>
+<clazz class-name="cn.mars.demo.school.classinfo.txn.TxnDClass" description="班级信息查询" relation="cn.mars.demo.school.classinfo.dao.DClassDao" sort-name="demo">
+  <method method-name="txn500021" description="查询班级列表" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，查询班级列表" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+  <method method-name="txn500022" description="修改班级信息" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，修改班级信息" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+  <method method-name="txn500023" description="增加班级信息" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，增加班级信息" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+  <method method-name="txn500024" description="查询班级用于修改" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，查询班级用于修改" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+  <method method-name="txn500025" description="删除班级信息" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，删除班级信息" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+  <method method-name="txn500026" description="班级的记录信息" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，班级的记录信息" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+  <method method-name="txn500027" description="班级的修改日志" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，班级的修改日志" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+  <method method-name="txn50002b" description="修改记录的状态" flow-design="调用实体类[cn.mars.demo.school.classinfo.dao.DClass]的方法[]，修改记录的状态" called-classes="cn.mars.demo.school.classinfo.dao.DClass"/>
+</clazz>
+<clazz class-name="cn.mars.demo.forum.txn.TxnDForumUser" description="用户信息管理" relation="cn.mars.demo.forum.dao.DForumUserDao" sort-name="demo">
+  <method method-name="txn932041" description="查询用户列表" flow-design="调用实体类[cn.mars.demo.forum.dao.DForumUser]的方法[]，查询用户列表" called-classes="cn.mars.demo.forum.dao.DForumUser"/>
+  <method method-name="txn932042" description="修改用户信息" flow-design="调用实体类[cn.mars.demo.forum.dao.DForumUser]的方法[]，修改用户信息" called-classes="cn.mars.demo.forum.dao.DForumUser"/>
+  <method method-name="txn932043" description="增加用户信息" flow-design="调用实体类[cn.mars.demo.forum.dao.DForumUser]的方法[]，增加用户信息" called-classes="cn.mars.demo.forum.dao.DForumUser"/>
+  <method method-name="txn932044" description="查询用户用于修改" flow-design="调用实体类[cn.mars.demo.forum.dao.DForumUser]的方法[]，查询用户用于修改" called-classes="cn.mars.demo.forum.dao.DForumUser"/>
+  <method method-name="txn932045" description="删除用户信息" flow-design="调用实体类[cn.mars.demo.forum.dao.DForumUser]的方法[]，删除用户信息" called-classes="cn.mars.demo.forum.dao.DForumUser"/>
+  <method method-name="txn93204d" description="修改用户密码" flow-design="调用实体类[cn.mars.demo.forum.dao.DForumUser]的方法[]，修改用户密码" called-classes="cn.mars.demo.forum.dao.DForumUser"/>
+</clazz>
+<clazz class-name="cn.mars.demo.person.txn.TxnDJobResume" description="人员信息维护" relation="cn.mars.demo.person.dao.DJobResumeDao" sort-name="demo">
+  <method method-name="txn200111" description="查询简历列表" flow-design="调用实体类[cn.mars.demo.person.dao.DJobResume]的方法[]，查询简历列表" called-classes="cn.mars.demo.person.dao.DJobResume"/>
+  <method method-name="txn200112" description="修改简历信息" flow-design="调用实体类[cn.mars.demo.person.dao.DJobResume]的方法[]，修改简历信息" called-classes="cn.mars.demo.person.dao.DJobResume"/>
+  <method method-name="txn200113" description="增加简历信息" flow-design="调用实体类[cn.mars.demo.person.dao.DJobResume]的方法[]，增加简历信息" called-classes="cn.mars.demo.person.dao.DJobResume"/>
+  <method method-name="txn200114" description="查询简历用于修改" flow-design="调用实体类[cn.mars.demo.person.dao.DJobResume]的方法[]，查询简历用于修改" called-classes="cn.mars.demo.person.dao.DJobResume"/>
+  <method method-name="txn200115" description="删除简历信息" flow-design="调用实体类[cn.mars.demo.person.dao.DJobResume]的方法[]，删除简历信息" called-classes="cn.mars.demo.person.dao.DJobResume"/>
+</clazz>
+<clazz class-name="cn.mars.test.async.TxnAsyncService" description="JMS和异步调用测试" relation="cn.mars.test.async.AsyncServiceDao" sort-name="demo">
+  <method method-name="txn900001" description="异步处理服务" flow-design="调用实体类[cn.mars.test.async.AsyncService]的方法[]，异步处理服务" called-classes="cn.mars.test.async.AsyncService"/>
+</clazz>
+<clazz class-name="cn.mars.app.user.region.txn.TxnDataRegion" description="数据分区管理" relation="cn.mars.app.user.region.dao.DataRegionDao" sort-name="module">
+  <method method-name="txn980591" description="查询分区列表" flow-design="调用实体类[cn.mars.app.user.region.dao.DataRegion]的方法[]，查询分区列表" called-classes="cn.mars.app.user.region.dao.DataRegion"/>
+  <method method-name="txn980592" description="修改分区信息" flow-design="调用实体类[cn.mars.app.user.region.dao.DataRegion]的方法[]，修改分区信息" called-classes="cn.mars.app.user.region.dao.DataRegion"/>
+  <method method-name="txn980593" description="增加分区信息" flow-design="调用实体类[cn.mars.app.user.region.dao.DataRegion]的方法[]，增加分区信息" called-classes="cn.mars.app.user.region.dao.DataRegion"/>
+  <method method-name="txn980594" description="查询分区用于修改" flow-design="调用实体类[cn.mars.app.user.region.dao.DataRegion]的方法[]，查询分区用于修改" called-classes="cn.mars.app.user.region.dao.DataRegion"/>
+  <method method-name="txn980595" description="删除分区信息" flow-design="调用实体类[cn.mars.app.user.region.dao.DataRegion]的方法[]，删除分区信息" called-classes="cn.mars.app.user.region.dao.DataRegion"/>
+  <method method-name="txn980598" description="分区的目录结构" flow-design="调用实体类[cn.mars.app.user.region.dao.DataRegion]的方法[]，分区的目录结构" called-classes="cn.mars.app.user.region.dao.DataRegion"/>
+  <method method-name="txn980599" description="修改分区的目录结构" flow-design="调用实体类[cn.mars.app.user.region.dao.DataRegion]的方法[]，修改分区的目录结构" called-classes="cn.mars.app.user.region.dao.DataRegion"/>
+</clazz>
+<clazz class-name="cn.mars.app.notice.txn.TxnNotice" description="通知信息维护" relation="cn.mars.app.notice.dao.NoticeDao" sort-name="module">
+  <method method-name="txn981101" description="查询通知列表" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，查询通知列表" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981102" description="修改通知资料" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，修改通知资料" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981103" description="增加通知资料" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，增加通知资料" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981104" description="查询通知用于修改" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，查询通知用于修改" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981105" description="删除通知信息" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，删除通知信息" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981106" description="查询我发布的通知列表" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，查询我发布的通知列表" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981111" description="未阅读通知列表" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，未阅读通知列表" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981112" description="已阅读通知列表" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，已阅读通知列表" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981113" description="查看通知信息" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，查看通知信息" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981114" description="修改通知状态" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，修改通知状态" called-classes="cn.mars.app.notice.dao.Notice"/>
+  <method method-name="txn981115" description="查看通知信息,不修改状态,不检查用户" flow-design="调用实体类[cn.mars.app.notice.dao.Notice]的方法[]，查看通知信息,不修改状态,不检查用户" called-classes="cn.mars.app.notice.dao.Notice"/>
+</clazz>
+<clazz class-name="cn.mars.app.errlog.txn.TxnErrLog" description="错误日志查询" relation="cn.mars.app.errlog.dao.ErrLogDao" sort-name="module">
+  <method method-name="txn980051" description="查询错误日志列表" flow-design="调用实体类[cn.mars.app.errlog.dao.ErrLog]的方法[]，查询错误日志列表" called-classes="cn.mars.app.errlog.dao.ErrLog"/>
+  <method method-name="txn980053" description="增加错误日志信息" flow-design="调用实体类[cn.mars.app.errlog.dao.ErrLog]的方法[]，增加错误日志信息" called-classes="cn.mars.app.errlog.dao.ErrLog"/>
+  <method method-name="txn980054" description="查询错误日志信息" flow-design="调用实体类[cn.mars.app.errlog.dao.ErrLog]的方法[]，查询错误日志信息" called-classes="cn.mars.app.errlog.dao.ErrLog"/>
+  <method method-name="txn980055" description="删除错误日志信息" flow-design="调用实体类[cn.mars.app.errlog.dao.ErrLog]的方法[]，删除错误日志信息" called-classes="cn.mars.app.errlog.dao.ErrLog"/>
+</clazz>
+<clazz class-name="cn.mars.app.ifile.txn.TxnIFile" description="文件下载接口" relation="cn.mars.app.ifile.dao.IFileDao" sort-name="module">
+  <method method-name="txn991221" description="查询文件接口列表" flow-design="调用实体类[cn.mars.app.ifile.dao.IFile]的方法[]，查询文件接口列表" called-classes="cn.mars.app.ifile.dao.IFile"/>
+  <method method-name="txn991222" description="修改文件接口信息" flow-design="调用实体类[cn.mars.app.ifile.dao.IFile]的方法[]，修改文件接口信息" called-classes="cn.mars.app.ifile.dao.IFile"/>
+  <method method-name="txn991223" description="增加文件接口信息" flow-design="调用实体类[cn.mars.app.ifile.dao.IFile]的方法[]，增加文件接口信息" called-classes="cn.mars.app.ifile.dao.IFile"/>
+  <method method-name="txn991224" description="查询文件接口用于修改" flow-design="调用实体类[cn.mars.app.ifile.dao.IFile]的方法[]，查询文件接口用于修改" called-classes="cn.mars.app.ifile.dao.IFile"/>
+  <method method-name="txn991225" description="删除文件接口信息" flow-design="调用实体类[cn.mars.app.ifile.dao.IFile]的方法[]，删除文件接口信息" called-classes="cn.mars.app.ifile.dao.IFile"/>
+</clazz>
+<clazz class-name="cn.mars.app.para.txn.TxnBizpara" description="业务参数维护" relation="cn.mars.app.para.dao.BizparaDao" sort-name="module">
+  <method method-name="txn980101" description="查询业务参数列表" flow-design="调用实体类[cn.mars.app.para.dao.Bizpara]的方法[]，查询业务参数列表" called-classes="cn.mars.app.para.dao.Bizpara"/>
+  <method method-name="txn980102" description="修改业务参数资料" flow-design="调用实体类[cn.mars.app.para.dao.Bizpara]的方法[]，修改业务参数资料" called-classes="cn.mars.app.para.dao.Bizpara"/>
+  <method method-name="txn980103" description="增加业务参数资料" flow-design="调用实体类[cn.mars.app.para.dao.Bizpara]的方法[]，增加业务参数资料" called-classes="cn.mars.app.para.dao.Bizpara"/>
+  <method method-name="txn980104" description="查询业务参数用于修改" flow-design="调用实体类[cn.mars.app.para.dao.Bizpara]的方法[]，查询业务参数用于修改" called-classes="cn.mars.app.para.dao.Bizpara"/>
+  <method method-name="txn980105" description="删除业务参数信息" flow-design="调用实体类[cn.mars.app.para.dao.Bizpara]的方法[]，删除业务参数信息" called-classes="cn.mars.app.para.dao.Bizpara"/>
+</clazz>
+<clazz class-name="cn.mars.test.httpclient.HttpClientTest" description="HTTP-CLIENT测试程序" relation="cn.mars.test.httpclient.HttpClientTestDao" sort-name="demo">
+  <method method-name="txnTEST01" description="未处理错误查询" flow-design="调用实体类[cn.mars.test.httpclient.HttpClientTest]的方法[]，未处理错误查询" called-classes="cn.mars.test.httpclient.HttpClientTest"/>
+</clazz>
+<clazz class-name="cn.mars.app.priv.txn.TxnFuncinfo" description="功能权限维护" relation="cn.mars.app.priv.dao.FuncinfoDao" sort-name="module">
+  <method method-name="txn980301" description="查询功能信息列表" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，查询功能信息列表" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn980302" description="修改功能信息资料" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，修改功能信息资料" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn980303" description="增加功能信息资料" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，增加功能信息资料" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn980304" description="查询功能信息用于修改" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，查询功能信息用于修改" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn980305" description="删除功能信息" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，删除功能信息" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn980307" description="移动功能节点/修改上级节点的功能代码" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，移动功能节点/修改上级节点的功能代码" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn980308" description="生成功能的交易列表文档" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，生成功能的交易列表文档" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn980309" description="导出功能信息" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，导出功能信息" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+  <method method-name="txn98030c" description="修改节点标题" flow-design="调用实体类[cn.mars.app.priv.dao.Funcinfo]的方法[]，修改节点标题" called-classes="cn.mars.app.priv.dao.Funcinfo"/>
+</clazz>
+<clazz class-name="cn.mars.demo.product.txn.TxnDSortName" description="产品分类信息" relation="cn.mars.demo.product.dao.DSortNameDao" sort-name="demo">
+  <method method-name="txn931101" description="查询产品分类列表" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，查询产品分类列表" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn931102" description="修改产品分类信息" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，修改产品分类信息" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn931103" description="增加产品分类信息" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，增加产品分类信息" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn931104" description="查询产品分类用于修改" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，查询产品分类用于修改" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn931105" description="删除产品分类信息" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，删除产品分类信息" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn931108" description="产品分类的目录结构" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，产品分类的目录结构" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn931109" description="修改产品分类的目录结构" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，修改产品分类的目录结构" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn93110a" description="修改产品分类的分类代码信息" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，修改产品分类的分类代码信息" called-classes="cn.mars.demo.product.dao.DSortName"/>
+  <method method-name="txn93110c" description="修改产品分类的标题" flow-design="调用实体类[cn.mars.demo.product.dao.DSortName]的方法[]，修改产品分类的标题" called-classes="cn.mars.demo.product.dao.DSortName"/>
+</clazz>
+<clazz class-name="cn.mars.app.security.txn.TxnCertificaty" description="生成证书" relation="cn.mars.app.security.dao.CertificatyDao" sort-name="module">
+  <method method-name="createCertificaty" description="生成证书" flow-design="调用实体类[cn.mars.app.security.dao.Certificaty]的方法[]，生成证书" called-classes="cn.mars.app.security.dao.Certificaty"/>
+</clazz>
+<clazz class-name="cn.mars.demo.person.txn.TxnDPerson" description="人员信息维护" relation="cn.mars.demo.person.dao.DPersonDao" sort-name="demo">
+  <method method-name="txn200101" description="查询人员列表" flow-design="调用实体类[cn.mars.demo.person.dao.DPerson]的方法[]，查询人员列表" called-classes="cn.mars.demo.person.dao.DPerson"/>
+  <method method-name="txn200102" description="修改人员信息" flow-design="调用实体类[cn.mars.demo.person.dao.DPerson]的方法[]，修改人员信息" called-classes="cn.mars.demo.person.dao.DPerson"/>
+  <method method-name="txn200103" description="增加人员信息" flow-design="调用实体类[cn.mars.demo.person.dao.DPerson]的方法[]，增加人员信息" called-classes="cn.mars.demo.person.dao.DPerson"/>
+  <method method-name="txn200104" description="查询人员用于修改" flow-design="调用实体类[cn.mars.demo.person.dao.DPerson]的方法[]，查询人员用于修改" called-classes="cn.mars.demo.person.dao.DPerson"/>
+  <method method-name="txn200105" description="删除人员信息" flow-design="调用实体类[cn.mars.demo.person.dao.DPerson]的方法[]，删除人员信息" called-classes="cn.mars.demo.person.dao.DPerson"/>
+</clazz>
+<clazz class-name="cn.mars.app.dict.txn.TxnDictType" description="数据字典维护" relation="cn.mars.app.dict.dao.DictTypeDao" sort-name="module">
+  <method method-name="txn903201" description="查询分类列表" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，查询分类列表" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn903202" description="修改分类信息" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，修改分类信息" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn903203" description="增加分类信息" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，增加分类信息" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn903204" description="查询分类用于修改" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，查询分类用于修改" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn903205" description="删除分类信息" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，删除分类信息" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn903208" description="分类的目录结构" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，分类的目录结构" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn903209" description="修改分类的目录结构" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，修改分类的目录结构" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn90320a" description="修改分类的分类代码信息" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，修改分类的分类代码信息" called-classes="cn.mars.app.dict.dao.DictType"/>
+  <method method-name="txn90320c" description="修改分类的标题" flow-design="调用实体类[cn.mars.app.dict.dao.DictType]的方法[]，修改分类的标题" called-classes="cn.mars.app.dict.dao.DictType"/>
+</clazz>
+<clazz class-name="cn.mars.app.isql.txn.TxnIDataConfig" description="通用数据接口" relation="cn.mars.app.isql.dao.IDataConfigDao" sort-name="module">
+  <method method-name="txn991211" description="取数据接口列表" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，取数据接口列表" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+  <method method-name="txn991212" description="修改数据接口信息" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，修改数据接口信息" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+  <method method-name="txn991213" description="增加数据接口" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，增加数据接口" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+  <method method-name="txn991214" description="取数据接口信息用于修改" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，取数据接口信息用于修改" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+  <method method-name="txn991215" description="删除数据接口" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，删除数据接口" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+  <method method-name="txn991218" description="生成数据接口目录树" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，生成数据接口目录树" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+  <method method-name="txn99121b" description="修改记录的状态" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，修改记录的状态" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+  <method method-name="txn99121t" description="测试数据接口－输入" flow-design="调用实体类[cn.mars.app.isql.dao.IDataConfig]的方法[]，测试数据接口－输入" called-classes="cn.mars.app.isql.dao.IDataConfig"/>
+</clazz>
+<clazz class-name="cn.mars.pm.plan.txn.TxnDModules" description="应用模块管理" relation="cn.mars.pm.plan.dao.DModulesDao" sort-name="demo">
+  <method method-name="txn931011" description="查询模块列表" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，查询模块列表" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn931012" description="修改模块信息" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，修改模块信息" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn931013" description="增加模块信息" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，增加模块信息" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn931014" description="查询模块用于修改" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，查询模块用于修改" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn931015" description="删除模块信息" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，删除模块信息" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn931018" description="模块的目录结构，用于生成树" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，模块的目录结构，用于生成树" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn931019" description="修改模块的目录结构，用于节点的拖动" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，修改模块的目录结构，用于节点的拖动" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn93101a" description="修改模块的分类代码信息，用于树的分类代码修改" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，修改模块的分类代码信息，用于树的分类代码修改" called-classes="cn.mars.pm.plan.dao.DModules"/>
+  <method method-name="txn93101c" description="修改模块的标题，用于树节点的标题编辑" flow-design="调用实体类[cn.mars.pm.plan.dao.DModules]的方法[]，修改模块的标题，用于树节点的标题编辑" called-classes="cn.mars.pm.plan.dao.DModules"/>
+</clazz>
+<clazz class-name="cn.mars.test.compiler.TxnTestClassService" description="服务器类测试" relation="cn.mars.test.compiler.TestClassServiceDao" sort-name="demo">
+  <method method-name="txnTestClass" description="服务器类测试" flow-design="调用实体类[cn.mars.test.compiler.TestClassService]的方法[]，服务器类测试" called-classes="cn.mars.test.compiler.TestClassService"/>
+</clazz>
+</classes>

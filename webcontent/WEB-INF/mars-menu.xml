@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE mars-menu SYSTEM "mars-menu.dtd">
+<mars-menu>
+  <title>MARS软件商业应用软件</title>
+  <menu-text>系统管理</menu-text>
+  <root-icon>menu_new_root.gif</root-icon>
+  <menu id="01A01" name="二连税务局审核单" path="/app" visible="true">
+    <menu id="01A0101" name="审核单信息" path="/elshd" href="query-t_exam_bill.jsp" txncode="01A0101" visible="true"/>
+  </menu>
+
+</mars-menu>
+

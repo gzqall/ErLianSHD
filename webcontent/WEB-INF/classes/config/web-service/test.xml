@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE webservice-config SYSTEM "mars-webservice.dtd">
+<webservice-config>
+  <package-name>cn.mars.webservice.test</package-name>
+  <host-name>http://localhost:8000</host-name>
+  <auto-deploy>true</auto-deploy>
+  <description>测试</description>
+  <service txn-code="932011" file-upload="false" description="查询计算机列表">
+    <input>
+      <parameter prefix="select-key" field-name="computeid" description="计算机编号" cannull="true" data-type="string"/>
+      <parameter prefix="select-key" field-name="purdate1" description="采购日期" cannull="true" data-type="string"/>
+      <parameter prefix="select-key" field-name="purdate2" description="采购日期" cannull="true" data-type="string"/>
+      <parameter prefix="select-key" field-name="userdept" description="使用部门" cannull="true" data-type="string"/>
+      <parameter prefix="select-key" field-name="username" description="使用人" cannull="true" data-type="string"/>
+    </input>
+
+    <output>
+      <parameter prefix="record" field-name="uuid" description="唯一键值" cannull="false" data-type="string"/>
+      <parameter prefix="record" field-name="computeid" description="计算机编号" cannull="false" data-type="string"/>
+      <parameter prefix="record" field-name="purdate" description="采购日期" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="price" description="采购价格" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="userdept" description="使用部门" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="username" description="使用人" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="location" description="存放位置" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="setting" description="机器配置" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="osname" description="操作系统" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="ipaddr" description="IP地址" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="startdate" description="使用日期" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="status" description="有效标志" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="memo" description="备注" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="regname" description="登记人" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="regdate" description="登记日期" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="modname" description="修改人" cannull="true" data-type="string"/>
+      <parameter prefix="record" field-name="moddate" description="修改日期" cannull="true" data-type="string"/>
+    </output>
+  </service>
+</webservice-config>
+

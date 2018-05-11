@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT mars-config (jdbc?, 
+			txn-containers?, 
+			txn-flows?, 
+			page?, 
+			file-paths?,
+			user-config?,
+			controller?,
+			jms?,
+			cvs?,
+			char-set?,
+			ajax-char-set?,
+			file-encoding?,
+			message-resources*)
+>
+
+<!-- data source !-->
+<!ELEMENT jdbc (database+)>
+<!ATTLIST jdbc
+	jta-flag (true | false) "false"
+	jta-provider CDATA #IMPLIED
+	jta-username CDATA #IMPLIED
+	jta-password CDATA #IMPLIED
+>
+
+<!ELEMENT database (jndi-name?, db-url?, db-driver?, db-username?, db-password?, value-class?)>
+<!ATTLIST database
+	db-name CDATA #REQUIRED
+	db-type (datasource | jdbc) "datasource"
+	db-server (oracle | db2 | informix | sybase | sqlserver | mysql | access |hsqldb) "oracle"
+	db-transaction (jdbc | jta) "jta"
+	db-isolation (read_uncommitted | read_committed | repeatable_read | serializable) "read_uncommitted"
+	db-schema CDATA #IMPLIED
+	sync-table (false | true) "false"
+>
+
+<!ELEMENT jndi-name (#PCDATA)>
+<!ELEMENT db-url (#PCDATA)>
+<!ELEMENT db-driver (#PCDATA)>
+<!ELEMENT db-username (#PCDATA)>
+<!ELEMENT db-password (#PCDATA)>
+<!ELEMENT value-class (#PCDATA)>
+
+<!-- container !-->
+<!ELEMENT txn-containers (container+)>
+<!ELEMENT container (type?, clazz?, url?, username?, password?)>
+<!ATTLIST container
+	name CDATA #REQUIRED
+>
+
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT clazz (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+
+<!-- txn-flows !-->
+<!ELEMENT txn-flows (txn-flow*)>
+<!ELEMENT txn-flow (before*, after*)>
+<!ATTLIST txn-flow
+	flow-id CDATA #REQUIRED
+	description CDATA #IMPLIED
+>
+
+<!ELEMENT before (#PCDATA)>
+<!ATTLIST before
+	clazz-name CDATA #REQUIRED
+	method-name CDATA #IMPLIED
+	description CDATA #IMPLIED
+>
+
+<!ELEMENT after (#PCDATA)>
+<!ATTLIST after
+	clazz-name CDATA #REQUIRED
+	method-name CDATA #IMPLIED
+	description CDATA #IMPLIED
+>
+
+<!-- page !-->
+<!ELEMENT page (login-page?, logout-page?, error-page?, home-page?)>
+<!ELEMENT login-page (#PCDATA)>
+<!ELEMENT logout-page (#PCDATA)>
+<!ELEMENT error-page (#PCDATA)>
+<!ELEMENT home-page (#PCDATA)>
+
+<!ELEMENT user-config (property+)>
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+	name CDATA #REQUIRED
+	value CDATA #REQUIRED
+>
+
+<!ELEMENT file-paths (file-path+)>
+<!ELEMENT file-path EMPTY>
+<!ATTLIST file-path
+	type CDATA #REQUIRED
+	path CDATA #REQUIRED
+>
+
+<!-- 资源文件名称 !-->
+<!ELEMENT message-resources EMPTY>
+<!ATTLIST message-resources
+	parameter CDATA #REQUIRED
+	key CDATA #IMPLIED
+>
+
+
+<!-- 控制信息 !-->
+<!ELEMENT controller (
+			start-mode?,
+			startup-clazz?,
+			upload-path?, 
+			download-path?, 
+			resource-path?, 
+			share-path?, 
+			is-msg-server?, 
+			is-task-server?,
+			report-server?,
+			query-server?,
+			jgroup-port? )
+>
+
+<!-- 保存上传文件的临时目录 !-->
+<!ELEMENT upload-path (#PCDATA)>
+
+<!-- 保存下传文件的临时目录 !-->
+<!ELEMENT download-path (#PCDATA)>
+
+<!-- 模板文件的目录 !-->
+<!ELEMENT resource-path (#PCDATA)>
+
+<!-- 共享文件的目录 !-->
+<!ELEMENT share-path (#PCDATA)>
+
+<!-- 启动模式：develop、deve、development、test = 开发模式 !-->
+<!ELEMENT start-mode (#PCDATA)>
+
+<!-- 初始化容器的类名称 !-->
+<!ELEMENT startup-clazz (#PCDATA)>
+
+<!-- 本机是否启动短消息服务 !-->
+<!ELEMENT is-msg-server (#PCDATA)>
+
+<!-- 本机是否启动任务管理服务 !-->
+<!ELEMENT is-task-server (#PCDATA)>
+
+<!-- 报表服务器地址 !-->
+<!ELEMENT report-server (#PCDATA)>
+
+<!-- 综合查询服务器地址 !-->
+<!ELEMENT query-server (#PCDATA)>
+
+<!-- JGROUP监听的端口，如果为空，不启动JGROUP !-->
+<!ELEMENT jgroup-port (#PCDATA)>
+
+<!-- JMS配置信息 !-->
+<!ELEMENT jms (
+			factory-name?,
+			jms-username?,
+			jms-password?,
+			async-queue-name?,
+			async-max-thread?,
+			batch-queue-name?,
+			batch-max-thread?,
+			monitor-factory-name?,
+			monitor-queue-name? )
+>
+
+<!-- 消息队列管理器的JNDI名称 !-->
+<!ELEMENT factory-name (#PCDATA)>
+
+<!-- 异步处理消息队列的JNDI名称 !-->
+<!ELEMENT async-queue-name (#PCDATA)>
+
+<!-- 处理异步消息的最大线程并发数量 !-->
+<!ELEMENT async-max-thread (#PCDATA)>
+
+<!-- 批量处理消息队列的JNDI名称 !-->
+<!ELEMENT batch-queue-name (#PCDATA)>
+
+<!-- 批量处理消息的最大线程并发数量 !-->
+<!ELEMENT batch-max-thread (#PCDATA)>
+
+<!-- 任务监控队列管理器 !-->
+<!ELEMENT monitor-factory-name (#PCDATA)>
+
+<!-- 任务监控队列名称 !-->
+<!ELEMENT monitor-queue-name (#PCDATA)>
+
+<!-- 用于连接JNDI资源的容器用户名，tomcat无效 !-->
+<!ELEMENT jms-username (#PCDATA)>
+
+<!-- 用于连接JNDI资源的容器密码，tomcat无效 !-->
+<!ELEMENT jms-password (#PCDATA)>
+
+<!-- 代码管理和编译信息 !-->
+<!ELEMENT cvs (
+			server-url?,
+			project-path?,
+			src-path?,
+			cvs-path? )
+>
+
+<!-- cvs !-->
+<!-- 源代码目录路径 !-->
+<!ELEMENT src-path (#PCDATA)>
+
+<!-- 工程目录 !-->
+<!ELEMENT project-path (#PCDATA)>
+
+<!-- JAVAC路径，包含javac或javac.exe !-->
+<!ELEMENT server-url (#PCDATA)>
+
+<!-- CVS服务器路径 !-->
+<!ELEMENT cvs-path (#PCDATA)>
+
+<!-- WEB服务器的缺省字符集 !-->
+<!ELEMENT char-set (#PCDATA)>
+
+<!-- AJAX请求的字符集 !-->
+<!ELEMENT ajax-char-set (#PCDATA)>
+
+<!-- XML文件的字符集 !-->
+<!ELEMENT file-encoding (#PCDATA)>
+

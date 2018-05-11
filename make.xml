@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<project name="demo" default="all" basedir=".">
+
+<!-- ==================== 文件 和 目录 定义 ======================== -->
+
+  <property name="app.name"  value="demo" />
+  <property name="src.home"  value="${basedir}/src/cn/mars"/>
+  <property name="classes.home"   value="${basedir}/classes"/>
+  <!--property name="lib.home"  value="${basedir}/../lib"/-->
+  <property name="tomcat.home"  value="D:/j2ee/Tomcat5.5" />
+  <property name="lib.home"  value="${tomcat.home}/webapps/ROOT/WEB-INF/lib"/>
+  <property name="deploy.path"  value="C:/Java/Tomcat5.0/webapps/ROOT/WEB-INF/lib"/>
+
+
+
+<!--  ==================== Compilation Control Options ==================== -->
+
+  <property name="compile.debug"       value="true"/>
+  <property name="compile.deprecation" value="false"/>
+  <property name="compile.optimize"    value="true"/>
+
+<!-- ==================== 编译组织的类路径=========================== -->
+
+
+  <path id="compile.classpath">
+    <fileset dir="${lib.home}">
+      <include name="*.jar" />    	
+      <include name="*.zip" />    	
+    </fileset>
+  </path>
+
+
+
+<!-- ==================== All Target ====================================== -->
+
+  <target name="all" depends="compile"
+   description="Clean build and dist directories, then compile"/>
+
+
+
+<!-- ==================== Init Target ================================== -->
+  <target name="init" description="Initialize for build">  
+    <!-- Create build directories as needed -->
+  	<mkdir dir="${classes.home}"/>
+  </target>
+
+
+<!-- ==================== Compile Target ================================== -->
+
+  <target name="compile" depends="init"
+   description="Compile Java sources">
+
+    <!-- Compile Java classes as necessary -->
+    <javac srcdir="${src.home}"
+			encoding="GBK"
+			destdir="${classes.home}"
+            debug="${compile.debug}"
+		 deprecation="${compile.deprecation}"
+         optimize="${compile.optimize}">
+        <classpath refid="compile.classpath"/>
+    </javac>
+  	
+    <jar jarfile="${deploy.path}/${app.name}.jar"
+            basedir="${classes.home}"
+            includes="**/*"  />
+  	
+  	<delete dir="${classes.home}"/>
+  </target>
+
+<!-- ==================== deploy ==================================== -->
+	<target name="deploy" depends="compile" description="copy classes file to web-info">
+   
+  </target>
+
+<!-- ==================== Clean Target ==================================== -->
+
+  <target name="clean" description="Delete old build and dist directories">
+  	<delete dir="${classes.home}"/>
+  </target>
+</project>
